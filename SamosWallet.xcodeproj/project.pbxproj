@@ -1,0 +1,1561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2714A990219C6206009F0D4C /* SAMAddNewCoinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2714A98F219C6206009F0D4C /* SAMAddNewCoinController.m */; };
+		2714A994219C6248009F0D4C /* SAMAddNewCoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2714A992219C6248009F0D4C /* SAMAddNewCoinCell.m */; };
+		2714A995219C6248009F0D4C /* SAMAddNewCoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2714A993219C6248009F0D4C /* SAMAddNewCoinCell.xib */; };
+		2720921E21B57ED6000C41DB /* SAMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720921D21B57ED6000C41DB /* SAMLoadingView.m */; };
+		2720922021B57F00000C41DB /* SAMLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2720921F21B57F00000C41DB /* SAMLoadingView.xib */; };
+		27A3405921ADA0DF0036B336 /* SAMWalletTokenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A3405821ADA0DF0036B336 /* SAMWalletTokenInfo.m */; };
+		27C3AD5121A30979000CFACA /* SAMNotificationConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3AD5021A30979000CFACA /* SAMNotificationConst.m */; };
+		27C3AD5721A30E0B000CFACA /* SAMCoinBalanceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3AD5621A30E0B000CFACA /* SAMCoinBalanceInfo.m */; };
+		4B3F72EA236F0DD500613477 /* HaiProtocolTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F72E9236F0DD500613477 /* HaiProtocolTool.m */; };
+		4B8F560223643EAA0049EAA7 /* HaiExplorerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F560123643EAA0049EAA7 /* HaiExplorerController.m */; };
+		4BE2133623BA285C00013EDC /* NSString+encryptionMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2133523BA285C00013EDC /* NSString+encryptionMD5.m */; };
+		4BE5A9752376D0A300E3E522 /* LockTokenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5A9742376D0A300E3E522 /* LockTokenInfo.m */; };
+		522BA31E2138DA6100625D21 /* SAMWalletNameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BA31C2138DA6100625D21 /* SAMWalletNameItem.m */; };
+		522BA31F2138DA6100625D21 /* SAMWalletNameItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522BA31D2138DA6100625D21 /* SAMWalletNameItem.xib */; };
+		523BE6822134FBAF00813AD3 /* SAMUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523BE6812134FBAF00813AD3 /* SAMUIWebViewController.m */; };
+		523BE6852135578300813AD3 /* SAMManageWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523BE6842135578300813AD3 /* SAMManageWalletController.m */; };
+		523BE68821355C0400813AD3 /* SAMGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523BE68721355C0400813AD3 /* SAMGuideViewController.m */; };
+		523BE68B21355EAB00813AD3 /* SAMGuideScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 523BE68A21355EAB00813AD3 /* SAMGuideScrollViewItem.m */; };
+		523BE68D2135680400813AD3 /* SAMGuideScrollViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523BE68C2135680400813AD3 /* SAMGuideScrollViewItem.xib */; };
+		524FFB612129658500C1E3F4 /* SAMLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 524FFB632129658500C1E3F4 /* SAMLanguage.strings */; };
+		524FFB692129687500C1E3F4 /* SAMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FFB682129687500C1E3F4 /* SAMConst.m */; };
+		524FFB6D212968F200C1E3F4 /* SAMAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FFB6C212968F200C1E3F4 /* SAMAppConfig.m */; };
+		524FFB7B2129726000C1E3F4 /* SAMNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FFB742129726000C1E3F4 /* SAMNetworkConfig.m */; };
+		524FFB7D2129726000C1E3F4 /* SAMApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FFB772129726000C1E3F4 /* SAMApi.m */; };
+		524FFB7E2129726000C1E3F4 /* SAMNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FFB782129726000C1E3F4 /* SAMNetwork.m */; };
+		524FFB9121297C0900C1E3F4 /* SAMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FFB8D21297C0900C1E3F4 /* SAMTabBarViewController.m */; };
+		526EEDB1212A6DD300F40D6A /* SAMHomeWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDB0212A6DD300F40D6A /* SAMHomeWalletController.m */; };
+		526EEDB5212A716A00F40D6A /* SAMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDB3212A716A00F40D6A /* SAMDeviceInfo.m */; };
+		526EEDB8212A78EB00F40D6A /* SAMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDB7212A78EB00F40D6A /* SAMNavigationController.m */; };
+		526EEDC7212A8EF300F40D6A /* SAMHomeWalletHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDC6212A8EF300F40D6A /* SAMHomeWalletHeaderView.m */; };
+		526EEDC9212A8F8D00F40D6A /* SAMHomeWalletHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526EEDC8212A8F8D00F40D6A /* SAMHomeWalletHeaderView.xib */; };
+		526EEDCF212A9A9F00F40D6A /* SAMHomeSideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDCE212A9A9F00F40D6A /* SAMHomeSideController.m */; };
+		526EEDD3212AA70D00F40D6A /* UIColor+SAMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDD2212AA70D00F40D6A /* UIColor+SAMAddition.m */; };
+		526EEDD5212AB72700F40D6A /* Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EEDD4212AB72700F40D6A /* Mobile.framework */; };
+		526EEDD9212ABFE400F40D6A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EEDD7212ABFE300F40D6A /* Reachability.m */; };
+		526EEDE2212AF03100F40D6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526EEDE1212AF03100F40D6A /* LaunchScreen.xib */; };
+		5270C43522113BE0003EE62C /* SAMLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270C43322113BE0003EE62C /* SAMLoadingViewController.m */; };
+		5270C43622113BE0003EE62C /* SAMLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5270C43422113BE0003EE62C /* SAMLoadingViewController.xib */; };
+		52835CFB21B268F300A0D9A1 /* SAMTradeRecordListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835CFA21B268F300A0D9A1 /* SAMTradeRecordListModel.m */; };
+		52835CFE21B2778F00A0D9A1 /* SAMTradeRecordDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835CFD21B2778F00A0D9A1 /* SAMTradeRecordDetailController.m */; };
+		52835D0221B27AB900A0D9A1 /* SAMTradeRecordDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D0021B27AB900A0D9A1 /* SAMTradeRecordDetailCell.m */; };
+		52835D0321B27AB900A0D9A1 /* SAMTradeRecordDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D0121B27AB900A0D9A1 /* SAMTradeRecordDetailCell.xib */; };
+		52835D0621B2825000A0D9A1 /* SAMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D0521B2825000A0D9A1 /* SAMTool.m */; };
+		52835D0921B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D0821B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.m */; };
+		52835D0B21B289D600A0D9A1 /* SAMTradeRecordDetailBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D0A21B289D600A0D9A1 /* SAMTradeRecordDetailBottomBar.xib */; };
+		52835D1221B28D5000A0D9A1 /* SAMSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D1121B28D5000A0D9A1 /* SAMSendViewController.m */; };
+		52835D1621B28DFA00A0D9A1 /* SAMSendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D1421B28DFA00A0D9A1 /* SAMSendCell.m */; };
+		52835D1721B28DFA00A0D9A1 /* SAMSendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D1521B28DFA00A0D9A1 /* SAMSendCell.xib */; };
+		52835D1921B297E300A0D9A1 /* SAMSendBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D1821B297E300A0D9A1 /* SAMSendBottomBar.xib */; };
+		52835D1C21B297EC00A0D9A1 /* SAMSendBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D1A21B297EC00A0D9A1 /* SAMSendBottomBar.m */; };
+		52835D1F21B299E900A0D9A1 /* SAMSendDetailSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D1E21B299E900A0D9A1 /* SAMSendDetailSheet.m */; };
+		52835D2121B299F600A0D9A1 /* SAMSendDetailSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D2021B299F600A0D9A1 /* SAMSendDetailSheet.xib */; };
+		52835D2421B2B1E400A0D9A1 /* SAMReceiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D2321B2B1E400A0D9A1 /* SAMReceiveViewController.m */; };
+		52835D2821B2B2FA00A0D9A1 /* SAMReceiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D2621B2B2FA00A0D9A1 /* SAMReceiveCell.m */; };
+		52835D2921B2B2FA00A0D9A1 /* SAMReceiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D2721B2B2FA00A0D9A1 /* SAMReceiveCell.xib */; };
+		52835D2D21B2BBB700A0D9A1 /* SAMReceiveBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52835D2A21B2BBB600A0D9A1 /* SAMReceiveBottomBar.m */; };
+		52835D2E21B2BBB700A0D9A1 /* SAMReceiveBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52835D2B21B2BBB600A0D9A1 /* SAMReceiveBottomBar.xib */; };
+		528EA0BA217329D700F00809 /* NSString+SAMAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 528EA0B9217329D700F00809 /* NSString+SAMAddtion.m */; };
+		529751852169BFB7009F41AC /* SAMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 529751832169BFB7009F41AC /* SAMPathManager.m */; };
+		529D6B7821A937D2000756D7 /* SAMWalletUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D6B7721A937D2000756D7 /* SAMWalletUtil.m */; };
+		529D6B7E21A95EA9000756D7 /* SAMWalletAddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D6B7D21A95EA9000756D7 /* SAMWalletAddressInfo.m */; };
+		529E7FEE21A15BD600502A36 /* SAMCoinRateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 529E7FED21A15BD600502A36 /* SAMCoinRateInfo.m */; };
+		52A28DBE2133EF51007691DC /* SAMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A28DBC2133EF51007691DC /* SAMNavigationBar.m */; };
+		52A3E5122138310000731D84 /* SAMManageWalletBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A3E5112138310000731D84 /* SAMManageWalletBottomView.m */; };
+		52A3E514213831A600731D84 /* SAMManageWalletBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3E513213831A600731D84 /* SAMManageWalletBottomView.xib */; };
+		52A3E518213834A400731D84 /* SAMManageWalletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A3E515213834A300731D84 /* SAMManageWalletCell.m */; };
+		52A3E519213834A400731D84 /* SAMManageWalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3E516213834A400731D84 /* SAMManageWalletCell.xib */; };
+		52A3E51C2138382900731D84 /* SAMBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A3E51B2138382900731D84 /* SAMBaseCollectionViewController.m */; };
+		52A3E52321383B1D00731D84 /* SAMCreateWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A3E52221383B1D00731D84 /* SAMCreateWalletController.m */; };
+		52A83FC6213973B600712DF0 /* SAMWalletIconItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A83FC3213973B500712DF0 /* SAMWalletIconItem.m */; };
+		52A83FC7213973B600712DF0 /* SAMWalletIconItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A83FC4213973B500712DF0 /* SAMWalletIconItem.xib */; };
+		52A83FCB2139789500712DF0 /* SAMWalletIconListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A83FC92139789500712DF0 /* SAMWalletIconListItem.xib */; };
+		52A83FCC2139789500712DF0 /* SAMWalletIconListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A83FCA2139789500712DF0 /* SAMWalletIconListItem.m */; };
+		52A83FCF213981EB00712DF0 /* SAMImportWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A83FCD213981EB00712DF0 /* SAMImportWalletController.m */; };
+		52A83FD3213983C600712DF0 /* SAMWalletMemorizingWordsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A83FD0213983C600712DF0 /* SAMWalletMemorizingWordsItem.m */; };
+		52A83FD4213983C600712DF0 /* SAMWalletMemorizingWordsItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A83FD1213983C600712DF0 /* SAMWalletMemorizingWordsItem.xib */; };
+		52A8DE7E213C1ABE000BD652 /* SAMBackupWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DE7D213C1ABE000BD652 /* SAMBackupWordsController.m */; };
+		52A8DE82213C1B7B000BD652 /* SAMBackupWordsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DE80213C1B7B000BD652 /* SAMBackupWordsCell.m */; };
+		52A8DE83213C1B7B000BD652 /* SAMBackupWordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A8DE81213C1B7B000BD652 /* SAMBackupWordsCell.xib */; };
+		52A8DE87213C256F000BD652 /* SAMPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DE85213C256F000BD652 /* SAMPopupView.m */; };
+		52A8DE95213C32DD000BD652 /* SAMSaveWordsAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A8DE92213C32DD000BD652 /* SAMSaveWordsAlert.xib */; };
+		52A8DE96213C32DD000BD652 /* SAMSaveWordsAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DE93213C32DD000BD652 /* SAMSaveWordsAlert.m */; };
+		52A8DE99213C3428000BD652 /* SAMVerifyWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DE98213C3428000BD652 /* SAMVerifyWordsController.m */; };
+		52A8DE9D213C348B000BD652 /* SAMVerifyWordsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DE9B213C348B000BD652 /* SAMVerifyWordsCell.m */; };
+		52A8DE9E213C348B000BD652 /* SAMVerifyWordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A8DE9C213C348B000BD652 /* SAMVerifyWordsCell.xib */; };
+		52A8F50C21B38AC70040ECE4 /* SAMSendInputPwdSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8F50B21B38AC70040ECE4 /* SAMSendInputPwdSheet.m */; };
+		52A8F50E21B38AD30040ECE4 /* SAMSendInputPwdSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A8F50D21B38AD30040ECE4 /* SAMSendInputPwdSheet.xib */; };
+		52A8F51121B3962A0040ECE4 /* SAMWalletDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8F51021B3962A0040ECE4 /* SAMWalletDetailController.m */; };
+		52A8F51521B3978C0040ECE4 /* SAMWalletDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8F51321B3978C0040ECE4 /* SAMWalletDetailCell.m */; };
+		52A8F51621B3978C0040ECE4 /* SAMWalletDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A8F51421B3978C0040ECE4 /* SAMWalletDetailCell.xib */; };
+		52A8F51A21B3A3430040ECE4 /* SAMWalletDetailBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8F51721B3A3430040ECE4 /* SAMWalletDetailBottomBar.m */; };
+		52A8F51B21B3A3430040ECE4 /* SAMWalletDetailBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A8F51821B3A3430040ECE4 /* SAMWalletDetailBottomBar.xib */; };
+		52AA909421303BFF0065A755 /* SAMAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA909321303BFF0065A755 /* SAMAboutUsController.m */; };
+		52AA909B21303D460065A755 /* SAMAboutUsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA909721303D460065A755 /* SAMAboutUsHeaderView.xib */; };
+		52AA909C21303D460065A755 /* SAMVersionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA909821303D460065A755 /* SAMVersionCell.m */; };
+		52AA909D21303D460065A755 /* SAMAboutUsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA909921303D460065A755 /* SAMAboutUsHeaderView.m */; };
+		52AA909E21303D460065A755 /* SAMVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA909A21303D460065A755 /* SAMVersionCell.xib */; };
+		52AA90A121304A150065A755 /* SAMSystemSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA90A021304A140065A755 /* SAMSystemSettingController.m */; };
+		52AA90A521304A730065A755 /* SAMSystemSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA90A321304A730065A755 /* SAMSystemSettingCell.xib */; };
+		52AA90A621304A730065A755 /* SAMSystemSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA90A421304A730065A755 /* SAMSystemSettingCell.m */; };
+		52AA90AA21304CEE0065A755 /* SAMActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA90A921304CED0065A755 /* SAMActionSheet.m */; };
+		52AA90AD21304DEE0065A755 /* SAMSelectLanuageSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA90AC21304DEE0065A755 /* SAMSelectLanuageSheet.m */; };
+		52AA90AF21304DFA0065A755 /* SAMSelectLanuageSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA90AE21304DFA0065A755 /* SAMSelectLanuageSheet.xib */; };
+		52AA90B321304F6D0065A755 /* SAMSelectLanuageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA90B021304F6D0065A755 /* SAMSelectLanuageCell.m */; };
+		52AA90B421304F6D0065A755 /* SAMSelectLanuageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA90B121304F6D0065A755 /* SAMSelectLanuageCell.xib */; };
+		52AA90B8213054950065A755 /* SAMSelectUnitSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA90B5213054950065A755 /* SAMSelectUnitSheet.xib */; };
+		52AA90B9213054950065A755 /* SAMSelectUnitSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA90B6213054950065A755 /* SAMSelectUnitSheet.m */; };
+		52B14A2821282873007836F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B14A2721282873007836F3 /* Assets.xcassets */; };
+		52B14A2E21282873007836F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B14A2D21282873007836F3 /* main.m */; };
+		52B14A3C21282D77007836F3 /* SAMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B14A3A21282D77007836F3 /* SAMAppDelegate.m */; };
+		52B14A4521282F1F007836F3 /* SAMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B14A4421282F1F007836F3 /* SAMBaseViewController.m */; };
+		52B14A4821282F72007836F3 /* SAMBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B14A4721282F72007836F3 /* SAMBaseTableViewController.m */; };
+		52B5673321B22B4300796976 /* SAMCoinDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5673221B22B4300796976 /* SAMCoinDetailController.m */; };
+		52B5673621B22C3A00796976 /* SAMCoinDetailHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5673521B22C3A00796976 /* SAMCoinDetailHeader.m */; };
+		52B5673821B22C4F00796976 /* SAMCoinDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B5673721B22C4F00796976 /* SAMCoinDetailHeader.xib */; };
+		52B5673C21B2367000796976 /* SAMCoinTradeRecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5673A21B2367000796976 /* SAMCoinTradeRecordListCell.m */; };
+		52B5673D21B2367000796976 /* SAMCoinTradeRecordListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B5673B21B2367000796976 /* SAMCoinTradeRecordListCell.xib */; };
+		52B5674021B2388C00796976 /* SAMTradeBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5673F21B2388C00796976 /* SAMTradeBottomBar.m */; };
+		52B5674221B2393400796976 /* SAMTradeBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B5674121B2393400796976 /* SAMTradeBottomBar.xib */; };
+		52BC95BB2143BDD200EE87C9 /* SAMWalletPasswordPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC95BA2143BDD200EE87C9 /* SAMWalletPasswordPopView.m */; };
+		52BC95BD2143BDF900EE87C9 /* SAMWalletPasswordPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BC95BC2143BDF900EE87C9 /* SAMWalletPasswordPopView.xib */; };
+		52BC95C02143C49200EE87C9 /* SAMFirstMananeWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC95BF2143C49200EE87C9 /* SAMFirstMananeWalletController.m */; };
+		52BC95C42143C51900EE87C9 /* SAMFirstManageWalletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC95C22143C51900EE87C9 /* SAMFirstManageWalletCell.m */; };
+		52BC95C52143C51900EE87C9 /* SAMFirstManageWalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BC95C32143C51900EE87C9 /* SAMFirstManageWalletCell.xib */; };
+		52BCFD8F212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFD8D212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.m */; };
+		52BCFD90212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCFD8E212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.xib */; };
+		52BCFD93212C545300E0CB4E /* SAMHomeMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFD92212C545300E0CB4E /* SAMHomeMenuController.m */; };
+		52BCFD96212C54CB00E0CB4E /* SAMHomeMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFD95212C54CB00E0CB4E /* SAMHomeMenuHeaderView.m */; };
+		52BCFD98212C558200E0CB4E /* SAMHomeMenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCFD97212C558200E0CB4E /* SAMHomeMenuHeaderView.xib */; };
+		52BCFD9C212C578E00E0CB4E /* SAMHomeMenuToolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFD9A212C578E00E0CB4E /* SAMHomeMenuToolCell.m */; };
+		52BCFD9D212C578E00E0CB4E /* SAMHomeMenuToolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCFD9B212C578E00E0CB4E /* SAMHomeMenuToolCell.xib */; };
+		52BCFDA1212C5FC500E0CB4E /* SAMHomeMenuWalletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFD9F212C5FC500E0CB4E /* SAMHomeMenuWalletCell.m */; };
+		52BCFDA2212C5FC500E0CB4E /* SAMHomeMenuWalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCFDA0212C5FC500E0CB4E /* SAMHomeMenuWalletCell.xib */; };
+		52BCFDA5212C678700E0CB4E /* SAMMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFDA4212C678700E0CB4E /* SAMMeController.m */; };
+		52BCFDA9212C684C00E0CB4E /* SAMMeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFDA6212C684C00E0CB4E /* SAMMeHeaderView.m */; };
+		52BCFDAA212C684C00E0CB4E /* SAMMeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCFDA8212C684C00E0CB4E /* SAMMeHeaderView.xib */; };
+		52BCFDAE212C6BC900E0CB4E /* SAMMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BCFDAB212C6BC900E0CB4E /* SAMMeCell.xib */; };
+		52BCFDAF212C6BC900E0CB4E /* SAMMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BCFDAD212C6BC900E0CB4E /* SAMMeCell.m */; };
+		52C990CD21369CC3000786F4 /* SAMControllerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C990CC21369CC3000786F4 /* SAMControllerTool.m */; };
+		52CC50442198114A00B4E04E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CC50432198114A00B4E04E /* libsqlite3.0.tbd */; };
+		52CC505C2198671000B4E04E /* SAMWalletInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC50562198671000B4E04E /* SAMWalletInfo.m */; };
+		52CC505D2198671000B4E04E /* SAMWalletDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC50572198671000B4E04E /* SAMWalletDB.m */; };
+		52CC506221986E6A00B4E04E /* SAMTokenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC506121986E6A00B4E04E /* SAMTokenInfo.m */; };
+		52CC50662198767000B4E04E /* SAMTokenNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC50642198767000B4E04E /* SAMTokenNode.m */; };
+		52CC50692198768800B4E04E /* SAMTokenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC50682198768800B4E04E /* SAMTokenUtil.m */; };
+		B5EB89F799EF385C1BEF7DE5 /* libPods-SamosWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE49E8C982E137EF047B55A8 /* libPods-SamosWallet.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DB7E0B9BFCE684CBF789B2C /* Pods-SamosWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamosWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SamosWallet/Pods-SamosWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		2714A98E219C6206009F0D4C /* SAMAddNewCoinController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMAddNewCoinController.h; sourceTree = "<group>"; };
+		2714A98F219C6206009F0D4C /* SAMAddNewCoinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMAddNewCoinController.m; sourceTree = "<group>"; };
+		2714A991219C6248009F0D4C /* SAMAddNewCoinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMAddNewCoinCell.h; sourceTree = "<group>"; };
+		2714A992219C6248009F0D4C /* SAMAddNewCoinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMAddNewCoinCell.m; sourceTree = "<group>"; };
+		2714A993219C6248009F0D4C /* SAMAddNewCoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMAddNewCoinCell.xib; sourceTree = "<group>"; };
+		2720921C21B57ED6000C41DB /* SAMLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMLoadingView.h; sourceTree = "<group>"; };
+		2720921D21B57ED6000C41DB /* SAMLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMLoadingView.m; sourceTree = "<group>"; };
+		2720921F21B57F00000C41DB /* SAMLoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMLoadingView.xib; sourceTree = "<group>"; };
+		27A3405721ADA0DF0036B336 /* SAMWalletTokenInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletTokenInfo.h; sourceTree = "<group>"; };
+		27A3405821ADA0DF0036B336 /* SAMWalletTokenInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletTokenInfo.m; sourceTree = "<group>"; };
+		27C3AD4F21A30979000CFACA /* SAMNotificationConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMNotificationConst.h; sourceTree = "<group>"; };
+		27C3AD5021A30979000CFACA /* SAMNotificationConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMNotificationConst.m; sourceTree = "<group>"; };
+		27C3AD5521A30E0B000CFACA /* SAMCoinBalanceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCoinBalanceInfo.h; sourceTree = "<group>"; };
+		27C3AD5621A30E0B000CFACA /* SAMCoinBalanceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCoinBalanceInfo.m; sourceTree = "<group>"; };
+		4807CED66C3C6C72EABC9D81 /* Pods-SamosWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamosWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-SamosWallet/Pods-SamosWallet.release.xcconfig"; sourceTree = "<group>"; };
+		4B3F72E8236F0DB800613477 /* HaiProtocolTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaiProtocolTool.h; sourceTree = "<group>"; };
+		4B3F72E9236F0DD500613477 /* HaiProtocolTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiProtocolTool.m; sourceTree = "<group>"; };
+		4B8F560123643EAA0049EAA7 /* HaiExplorerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiExplorerController.m; sourceTree = "<group>"; };
+		4B8F560323643EE30049EAA7 /* HaiExplorerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaiExplorerController.h; sourceTree = "<group>"; };
+		4BE2133423BA284A00013EDC /* NSString+encryptionMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+encryptionMD5.h"; sourceTree = "<group>"; };
+		4BE2133523BA285C00013EDC /* NSString+encryptionMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+encryptionMD5.m"; sourceTree = "<group>"; };
+		4BE5A9732376D01400E3E522 /* LockTokenInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockTokenInfo.h; sourceTree = "<group>"; };
+		4BE5A9742376D0A300E3E522 /* LockTokenInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockTokenInfo.m; sourceTree = "<group>"; };
+		522BA31B2138DA6100625D21 /* SAMWalletNameItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletNameItem.h; sourceTree = "<group>"; };
+		522BA31C2138DA6100625D21 /* SAMWalletNameItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletNameItem.m; sourceTree = "<group>"; };
+		522BA31D2138DA6100625D21 /* SAMWalletNameItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMWalletNameItem.xib; sourceTree = "<group>"; };
+		523BE6802134FBAF00813AD3 /* SAMUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMUIWebViewController.h; sourceTree = "<group>"; };
+		523BE6812134FBAF00813AD3 /* SAMUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMUIWebViewController.m; sourceTree = "<group>"; };
+		523BE6832135578300813AD3 /* SAMManageWalletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMManageWalletController.h; sourceTree = "<group>"; };
+		523BE6842135578300813AD3 /* SAMManageWalletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMManageWalletController.m; sourceTree = "<group>"; };
+		523BE68621355C0400813AD3 /* SAMGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMGuideViewController.h; sourceTree = "<group>"; };
+		523BE68721355C0400813AD3 /* SAMGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMGuideViewController.m; sourceTree = "<group>"; };
+		523BE68921355EAB00813AD3 /* SAMGuideScrollViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMGuideScrollViewItem.h; sourceTree = "<group>"; };
+		523BE68A21355EAB00813AD3 /* SAMGuideScrollViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMGuideScrollViewItem.m; sourceTree = "<group>"; };
+		523BE68C2135680400813AD3 /* SAMGuideScrollViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMGuideScrollViewItem.xib; sourceTree = "<group>"; };
+		524FFB622129658500C1E3F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SAMLanguage.strings; sourceTree = "<group>"; };
+		524FFB642129660800C1E3F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SAMLanguage.strings"; sourceTree = "<group>"; };
+		524FFB672129687500C1E3F4 /* SAMConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMConst.h; sourceTree = "<group>"; };
+		524FFB682129687500C1E3F4 /* SAMConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMConst.m; sourceTree = "<group>"; };
+		524FFB6B212968F200C1E3F4 /* SAMAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMAppConfig.h; sourceTree = "<group>"; };
+		524FFB6C212968F200C1E3F4 /* SAMAppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMAppConfig.m; sourceTree = "<group>"; };
+		524FFB6E21296AD500C1E3F4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		524FFB702129726000C1E3F4 /* SAMNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMNetwork.h; sourceTree = "<group>"; };
+		524FFB712129726000C1E3F4 /* SAMApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMApi.h; sourceTree = "<group>"; };
+		524FFB742129726000C1E3F4 /* SAMNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMNetworkConfig.m; sourceTree = "<group>"; };
+		524FFB772129726000C1E3F4 /* SAMApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMApi.m; sourceTree = "<group>"; };
+		524FFB782129726000C1E3F4 /* SAMNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMNetwork.m; sourceTree = "<group>"; };
+		524FFB792129726000C1E3F4 /* SAMNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMNetworkConfig.h; sourceTree = "<group>"; };
+		524FFB8B21297C0900C1E3F4 /* SAMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMTabBarViewController.h; sourceTree = "<group>"; };
+		524FFB8D21297C0900C1E3F4 /* SAMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMTabBarViewController.m; sourceTree = "<group>"; };
+		526EEDAF212A6DD300F40D6A /* SAMHomeWalletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeWalletController.h; sourceTree = "<group>"; };
+		526EEDB0212A6DD300F40D6A /* SAMHomeWalletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeWalletController.m; sourceTree = "<group>"; };
+		526EEDB3212A716A00F40D6A /* SAMDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMDeviceInfo.m; sourceTree = "<group>"; };
+		526EEDB4212A716A00F40D6A /* SAMDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMDeviceInfo.h; sourceTree = "<group>"; };
+		526EEDB6212A78EB00F40D6A /* SAMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMNavigationController.h; sourceTree = "<group>"; };
+		526EEDB7212A78EB00F40D6A /* SAMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMNavigationController.m; sourceTree = "<group>"; };
+		526EEDC5212A8EF300F40D6A /* SAMHomeWalletHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeWalletHeaderView.h; sourceTree = "<group>"; };
+		526EEDC6212A8EF300F40D6A /* SAMHomeWalletHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeWalletHeaderView.m; sourceTree = "<group>"; };
+		526EEDC8212A8F8D00F40D6A /* SAMHomeWalletHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMHomeWalletHeaderView.xib; sourceTree = "<group>"; };
+		526EEDCD212A9A9F00F40D6A /* SAMHomeSideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeSideController.h; sourceTree = "<group>"; };
+		526EEDCE212A9A9F00F40D6A /* SAMHomeSideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeSideController.m; sourceTree = "<group>"; };
+		526EEDD1212AA70D00F40D6A /* UIColor+SAMAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SAMAddition.h"; sourceTree = "<group>"; };
+		526EEDD2212AA70D00F40D6A /* UIColor+SAMAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SAMAddition.m"; sourceTree = "<group>"; };
+		526EEDD4212AB72700F40D6A /* Mobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mobile.framework; path = SamosWallet/Frameworks/Mobile.framework; sourceTree = "<group>"; };
+		526EEDD7212ABFE300F40D6A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		526EEDD8212ABFE300F40D6A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		526EEDE1212AF03100F40D6A /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		5270C43222113BE0003EE62C /* SAMLoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMLoadingViewController.h; sourceTree = "<group>"; };
+		5270C43322113BE0003EE62C /* SAMLoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMLoadingViewController.m; sourceTree = "<group>"; };
+		5270C43422113BE0003EE62C /* SAMLoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMLoadingViewController.xib; sourceTree = "<group>"; };
+		52835CF921B268F300A0D9A1 /* SAMTradeRecordListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTradeRecordListModel.h; sourceTree = "<group>"; };
+		52835CFA21B268F300A0D9A1 /* SAMTradeRecordListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTradeRecordListModel.m; sourceTree = "<group>"; };
+		52835CFC21B2778F00A0D9A1 /* SAMTradeRecordDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTradeRecordDetailController.h; sourceTree = "<group>"; };
+		52835CFD21B2778F00A0D9A1 /* SAMTradeRecordDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTradeRecordDetailController.m; sourceTree = "<group>"; };
+		52835CFF21B27AB900A0D9A1 /* SAMTradeRecordDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTradeRecordDetailCell.h; sourceTree = "<group>"; };
+		52835D0021B27AB900A0D9A1 /* SAMTradeRecordDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTradeRecordDetailCell.m; sourceTree = "<group>"; };
+		52835D0121B27AB900A0D9A1 /* SAMTradeRecordDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMTradeRecordDetailCell.xib; sourceTree = "<group>"; };
+		52835D0421B2825000A0D9A1 /* SAMTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTool.h; sourceTree = "<group>"; };
+		52835D0521B2825000A0D9A1 /* SAMTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTool.m; sourceTree = "<group>"; };
+		52835D0721B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTradeRecordDetailBottomBar.h; sourceTree = "<group>"; };
+		52835D0821B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTradeRecordDetailBottomBar.m; sourceTree = "<group>"; };
+		52835D0A21B289D600A0D9A1 /* SAMTradeRecordDetailBottomBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMTradeRecordDetailBottomBar.xib; sourceTree = "<group>"; };
+		52835D1021B28D5000A0D9A1 /* SAMSendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMSendViewController.h; sourceTree = "<group>"; };
+		52835D1121B28D5000A0D9A1 /* SAMSendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMSendViewController.m; sourceTree = "<group>"; };
+		52835D1321B28DFA00A0D9A1 /* SAMSendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMSendCell.h; sourceTree = "<group>"; };
+		52835D1421B28DFA00A0D9A1 /* SAMSendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMSendCell.m; sourceTree = "<group>"; };
+		52835D1521B28DFA00A0D9A1 /* SAMSendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMSendCell.xib; sourceTree = "<group>"; };
+		52835D1821B297E300A0D9A1 /* SAMSendBottomBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMSendBottomBar.xib; sourceTree = "<group>"; };
+		52835D1A21B297EC00A0D9A1 /* SAMSendBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSendBottomBar.m; sourceTree = "<group>"; };
+		52835D1B21B297EC00A0D9A1 /* SAMSendBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSendBottomBar.h; sourceTree = "<group>"; };
+		52835D1D21B299E900A0D9A1 /* SAMSendDetailSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMSendDetailSheet.h; sourceTree = "<group>"; };
+		52835D1E21B299E900A0D9A1 /* SAMSendDetailSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMSendDetailSheet.m; sourceTree = "<group>"; };
+		52835D2021B299F600A0D9A1 /* SAMSendDetailSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMSendDetailSheet.xib; sourceTree = "<group>"; };
+		52835D2221B2B1E400A0D9A1 /* SAMReceiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMReceiveViewController.h; sourceTree = "<group>"; };
+		52835D2321B2B1E400A0D9A1 /* SAMReceiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMReceiveViewController.m; sourceTree = "<group>"; };
+		52835D2521B2B2FA00A0D9A1 /* SAMReceiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMReceiveCell.h; sourceTree = "<group>"; };
+		52835D2621B2B2FA00A0D9A1 /* SAMReceiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMReceiveCell.m; sourceTree = "<group>"; };
+		52835D2721B2B2FA00A0D9A1 /* SAMReceiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMReceiveCell.xib; sourceTree = "<group>"; };
+		52835D2A21B2BBB600A0D9A1 /* SAMReceiveBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMReceiveBottomBar.m; sourceTree = "<group>"; };
+		52835D2B21B2BBB600A0D9A1 /* SAMReceiveBottomBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMReceiveBottomBar.xib; sourceTree = "<group>"; };
+		52835D2C21B2BBB700A0D9A1 /* SAMReceiveBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMReceiveBottomBar.h; sourceTree = "<group>"; };
+		528EA0B8217329D700F00809 /* NSString+SAMAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SAMAddtion.h"; sourceTree = "<group>"; };
+		528EA0B9217329D700F00809 /* NSString+SAMAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SAMAddtion.m"; sourceTree = "<group>"; };
+		529751812169BFB7009F41AC /* SAMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPathManager.h; sourceTree = "<group>"; };
+		529751832169BFB7009F41AC /* SAMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPathManager.m; sourceTree = "<group>"; };
+		529D6B7621A937D2000756D7 /* SAMWalletUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletUtil.h; sourceTree = "<group>"; };
+		529D6B7721A937D2000756D7 /* SAMWalletUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletUtil.m; sourceTree = "<group>"; };
+		529D6B7C21A95EA9000756D7 /* SAMWalletAddressInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletAddressInfo.h; sourceTree = "<group>"; };
+		529D6B7D21A95EA9000756D7 /* SAMWalletAddressInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletAddressInfo.m; sourceTree = "<group>"; };
+		529E7FEC21A15BD600502A36 /* SAMCoinRateInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCoinRateInfo.h; sourceTree = "<group>"; };
+		529E7FED21A15BD600502A36 /* SAMCoinRateInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCoinRateInfo.m; sourceTree = "<group>"; };
+		52A28DBC2133EF51007691DC /* SAMNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMNavigationBar.m; sourceTree = "<group>"; };
+		52A28DBD2133EF51007691DC /* SAMNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMNavigationBar.h; sourceTree = "<group>"; };
+		52A3E5102138310000731D84 /* SAMManageWalletBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMManageWalletBottomView.h; sourceTree = "<group>"; };
+		52A3E5112138310000731D84 /* SAMManageWalletBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMManageWalletBottomView.m; sourceTree = "<group>"; };
+		52A3E513213831A600731D84 /* SAMManageWalletBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMManageWalletBottomView.xib; sourceTree = "<group>"; };
+		52A3E515213834A300731D84 /* SAMManageWalletCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMManageWalletCell.m; sourceTree = "<group>"; };
+		52A3E516213834A400731D84 /* SAMManageWalletCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMManageWalletCell.xib; sourceTree = "<group>"; };
+		52A3E517213834A400731D84 /* SAMManageWalletCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMManageWalletCell.h; sourceTree = "<group>"; };
+		52A3E51A2138382800731D84 /* SAMBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMBaseCollectionViewController.h; sourceTree = "<group>"; };
+		52A3E51B2138382900731D84 /* SAMBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMBaseCollectionViewController.m; sourceTree = "<group>"; };
+		52A3E52121383B1D00731D84 /* SAMCreateWalletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCreateWalletController.h; sourceTree = "<group>"; };
+		52A3E52221383B1D00731D84 /* SAMCreateWalletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCreateWalletController.m; sourceTree = "<group>"; };
+		52A83FC3213973B500712DF0 /* SAMWalletIconItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMWalletIconItem.m; sourceTree = "<group>"; };
+		52A83FC4213973B500712DF0 /* SAMWalletIconItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMWalletIconItem.xib; sourceTree = "<group>"; };
+		52A83FC5213973B500712DF0 /* SAMWalletIconItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMWalletIconItem.h; sourceTree = "<group>"; };
+		52A83FC82139789500712DF0 /* SAMWalletIconListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMWalletIconListItem.h; sourceTree = "<group>"; };
+		52A83FC92139789500712DF0 /* SAMWalletIconListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMWalletIconListItem.xib; sourceTree = "<group>"; };
+		52A83FCA2139789500712DF0 /* SAMWalletIconListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMWalletIconListItem.m; sourceTree = "<group>"; };
+		52A83FCD213981EB00712DF0 /* SAMImportWalletController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMImportWalletController.m; sourceTree = "<group>"; };
+		52A83FCE213981EB00712DF0 /* SAMImportWalletController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMImportWalletController.h; sourceTree = "<group>"; };
+		52A83FD0213983C600712DF0 /* SAMWalletMemorizingWordsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMWalletMemorizingWordsItem.m; sourceTree = "<group>"; };
+		52A83FD1213983C600712DF0 /* SAMWalletMemorizingWordsItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMWalletMemorizingWordsItem.xib; sourceTree = "<group>"; };
+		52A83FD2213983C600712DF0 /* SAMWalletMemorizingWordsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMWalletMemorizingWordsItem.h; sourceTree = "<group>"; };
+		52A8DE7C213C1ABE000BD652 /* SAMBackupWordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMBackupWordsController.h; sourceTree = "<group>"; };
+		52A8DE7D213C1ABE000BD652 /* SAMBackupWordsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMBackupWordsController.m; sourceTree = "<group>"; };
+		52A8DE7F213C1B7B000BD652 /* SAMBackupWordsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMBackupWordsCell.h; sourceTree = "<group>"; };
+		52A8DE80213C1B7B000BD652 /* SAMBackupWordsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMBackupWordsCell.m; sourceTree = "<group>"; };
+		52A8DE81213C1B7B000BD652 /* SAMBackupWordsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMBackupWordsCell.xib; sourceTree = "<group>"; };
+		52A8DE85213C256F000BD652 /* SAMPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopupView.m; sourceTree = "<group>"; };
+		52A8DE86213C256F000BD652 /* SAMPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopupView.h; sourceTree = "<group>"; };
+		52A8DE92213C32DD000BD652 /* SAMSaveWordsAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMSaveWordsAlert.xib; sourceTree = "<group>"; };
+		52A8DE93213C32DD000BD652 /* SAMSaveWordsAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSaveWordsAlert.m; sourceTree = "<group>"; };
+		52A8DE94213C32DD000BD652 /* SAMSaveWordsAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSaveWordsAlert.h; sourceTree = "<group>"; };
+		52A8DE97213C3427000BD652 /* SAMVerifyWordsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMVerifyWordsController.h; sourceTree = "<group>"; };
+		52A8DE98213C3428000BD652 /* SAMVerifyWordsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMVerifyWordsController.m; sourceTree = "<group>"; };
+		52A8DE9A213C348A000BD652 /* SAMVerifyWordsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMVerifyWordsCell.h; sourceTree = "<group>"; };
+		52A8DE9B213C348B000BD652 /* SAMVerifyWordsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMVerifyWordsCell.m; sourceTree = "<group>"; };
+		52A8DE9C213C348B000BD652 /* SAMVerifyWordsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMVerifyWordsCell.xib; sourceTree = "<group>"; };
+		52A8F50A21B38AC70040ECE4 /* SAMSendInputPwdSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMSendInputPwdSheet.h; sourceTree = "<group>"; };
+		52A8F50B21B38AC70040ECE4 /* SAMSendInputPwdSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMSendInputPwdSheet.m; sourceTree = "<group>"; };
+		52A8F50D21B38AD30040ECE4 /* SAMSendInputPwdSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMSendInputPwdSheet.xib; sourceTree = "<group>"; };
+		52A8F50F21B3962A0040ECE4 /* SAMWalletDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletDetailController.h; sourceTree = "<group>"; };
+		52A8F51021B3962A0040ECE4 /* SAMWalletDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletDetailController.m; sourceTree = "<group>"; };
+		52A8F51221B3978C0040ECE4 /* SAMWalletDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletDetailCell.h; sourceTree = "<group>"; };
+		52A8F51321B3978C0040ECE4 /* SAMWalletDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletDetailCell.m; sourceTree = "<group>"; };
+		52A8F51421B3978C0040ECE4 /* SAMWalletDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMWalletDetailCell.xib; sourceTree = "<group>"; };
+		52A8F51721B3A3430040ECE4 /* SAMWalletDetailBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMWalletDetailBottomBar.m; sourceTree = "<group>"; };
+		52A8F51821B3A3430040ECE4 /* SAMWalletDetailBottomBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMWalletDetailBottomBar.xib; sourceTree = "<group>"; };
+		52A8F51921B3A3430040ECE4 /* SAMWalletDetailBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMWalletDetailBottomBar.h; sourceTree = "<group>"; };
+		52AA909221303BFF0065A755 /* SAMAboutUsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMAboutUsController.h; sourceTree = "<group>"; };
+		52AA909321303BFF0065A755 /* SAMAboutUsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMAboutUsController.m; sourceTree = "<group>"; };
+		52AA909521303D460065A755 /* SAMAboutUsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMAboutUsHeaderView.h; sourceTree = "<group>"; };
+		52AA909621303D460065A755 /* SAMVersionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMVersionCell.h; sourceTree = "<group>"; };
+		52AA909721303D460065A755 /* SAMAboutUsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMAboutUsHeaderView.xib; sourceTree = "<group>"; };
+		52AA909821303D460065A755 /* SAMVersionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMVersionCell.m; sourceTree = "<group>"; };
+		52AA909921303D460065A755 /* SAMAboutUsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMAboutUsHeaderView.m; sourceTree = "<group>"; };
+		52AA909A21303D460065A755 /* SAMVersionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMVersionCell.xib; sourceTree = "<group>"; };
+		52AA909F21304A140065A755 /* SAMSystemSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSystemSettingController.h; sourceTree = "<group>"; };
+		52AA90A021304A140065A755 /* SAMSystemSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSystemSettingController.m; sourceTree = "<group>"; };
+		52AA90A221304A720065A755 /* SAMSystemSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSystemSettingCell.h; sourceTree = "<group>"; };
+		52AA90A321304A730065A755 /* SAMSystemSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMSystemSettingCell.xib; sourceTree = "<group>"; };
+		52AA90A421304A730065A755 /* SAMSystemSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSystemSettingCell.m; sourceTree = "<group>"; };
+		52AA90A821304CED0065A755 /* SAMActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMActionSheet.h; sourceTree = "<group>"; };
+		52AA90A921304CED0065A755 /* SAMActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMActionSheet.m; sourceTree = "<group>"; };
+		52AA90AB21304DEE0065A755 /* SAMSelectLanuageSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMSelectLanuageSheet.h; sourceTree = "<group>"; };
+		52AA90AC21304DEE0065A755 /* SAMSelectLanuageSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMSelectLanuageSheet.m; sourceTree = "<group>"; };
+		52AA90AE21304DFA0065A755 /* SAMSelectLanuageSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMSelectLanuageSheet.xib; sourceTree = "<group>"; };
+		52AA90B021304F6D0065A755 /* SAMSelectLanuageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSelectLanuageCell.m; sourceTree = "<group>"; };
+		52AA90B121304F6D0065A755 /* SAMSelectLanuageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMSelectLanuageCell.xib; sourceTree = "<group>"; };
+		52AA90B221304F6D0065A755 /* SAMSelectLanuageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSelectLanuageCell.h; sourceTree = "<group>"; };
+		52AA90B5213054950065A755 /* SAMSelectUnitSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMSelectUnitSheet.xib; sourceTree = "<group>"; };
+		52AA90B6213054950065A755 /* SAMSelectUnitSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSelectUnitSheet.m; sourceTree = "<group>"; };
+		52AA90B7213054950065A755 /* SAMSelectUnitSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSelectUnitSheet.h; sourceTree = "<group>"; };
+		52B14A1B21282872007836F3 /* SamosWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamosWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B14A2721282873007836F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52B14A2C21282873007836F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B14A2D21282873007836F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52B14A3921282D77007836F3 /* SAMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMAppDelegate.h; sourceTree = "<group>"; };
+		52B14A3A21282D77007836F3 /* SAMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMAppDelegate.m; sourceTree = "<group>"; };
+		52B14A4321282F1F007836F3 /* SAMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMBaseViewController.h; sourceTree = "<group>"; };
+		52B14A4421282F1F007836F3 /* SAMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMBaseViewController.m; sourceTree = "<group>"; };
+		52B14A4621282F72007836F3 /* SAMBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMBaseTableViewController.h; sourceTree = "<group>"; };
+		52B14A4721282F72007836F3 /* SAMBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMBaseTableViewController.m; sourceTree = "<group>"; };
+		52B5673121B22B4300796976 /* SAMCoinDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCoinDetailController.h; sourceTree = "<group>"; };
+		52B5673221B22B4300796976 /* SAMCoinDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCoinDetailController.m; sourceTree = "<group>"; };
+		52B5673421B22C3A00796976 /* SAMCoinDetailHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCoinDetailHeader.h; sourceTree = "<group>"; };
+		52B5673521B22C3A00796976 /* SAMCoinDetailHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCoinDetailHeader.m; sourceTree = "<group>"; };
+		52B5673721B22C4F00796976 /* SAMCoinDetailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMCoinDetailHeader.xib; sourceTree = "<group>"; };
+		52B5673921B2367000796976 /* SAMCoinTradeRecordListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCoinTradeRecordListCell.h; sourceTree = "<group>"; };
+		52B5673A21B2367000796976 /* SAMCoinTradeRecordListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCoinTradeRecordListCell.m; sourceTree = "<group>"; };
+		52B5673B21B2367000796976 /* SAMCoinTradeRecordListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMCoinTradeRecordListCell.xib; sourceTree = "<group>"; };
+		52B5673E21B2388C00796976 /* SAMTradeBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTradeBottomBar.h; sourceTree = "<group>"; };
+		52B5673F21B2388C00796976 /* SAMTradeBottomBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTradeBottomBar.m; sourceTree = "<group>"; };
+		52B5674121B2393400796976 /* SAMTradeBottomBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMTradeBottomBar.xib; sourceTree = "<group>"; };
+		52BC95B92143BDD200EE87C9 /* SAMWalletPasswordPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMWalletPasswordPopView.h; sourceTree = "<group>"; };
+		52BC95BA2143BDD200EE87C9 /* SAMWalletPasswordPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMWalletPasswordPopView.m; sourceTree = "<group>"; };
+		52BC95BC2143BDF900EE87C9 /* SAMWalletPasswordPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMWalletPasswordPopView.xib; sourceTree = "<group>"; };
+		52BC95BE2143C49200EE87C9 /* SAMFirstMananeWalletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMFirstMananeWalletController.h; sourceTree = "<group>"; };
+		52BC95BF2143C49200EE87C9 /* SAMFirstMananeWalletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMFirstMananeWalletController.m; sourceTree = "<group>"; };
+		52BC95C12143C51900EE87C9 /* SAMFirstManageWalletCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMFirstManageWalletCell.h; sourceTree = "<group>"; };
+		52BC95C22143C51900EE87C9 /* SAMFirstManageWalletCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMFirstManageWalletCell.m; sourceTree = "<group>"; };
+		52BC95C32143C51900EE87C9 /* SAMFirstManageWalletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMFirstManageWalletCell.xib; sourceTree = "<group>"; };
+		52BCFD8C212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeWalletCoinCell.h; sourceTree = "<group>"; };
+		52BCFD8D212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeWalletCoinCell.m; sourceTree = "<group>"; };
+		52BCFD8E212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMHomeWalletCoinCell.xib; sourceTree = "<group>"; };
+		52BCFD91212C545300E0CB4E /* SAMHomeMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeMenuController.h; sourceTree = "<group>"; };
+		52BCFD92212C545300E0CB4E /* SAMHomeMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeMenuController.m; sourceTree = "<group>"; };
+		52BCFD94212C54CB00E0CB4E /* SAMHomeMenuHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeMenuHeaderView.h; sourceTree = "<group>"; };
+		52BCFD95212C54CB00E0CB4E /* SAMHomeMenuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeMenuHeaderView.m; sourceTree = "<group>"; };
+		52BCFD97212C558200E0CB4E /* SAMHomeMenuHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMHomeMenuHeaderView.xib; sourceTree = "<group>"; };
+		52BCFD99212C578E00E0CB4E /* SAMHomeMenuToolCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeMenuToolCell.h; sourceTree = "<group>"; };
+		52BCFD9A212C578E00E0CB4E /* SAMHomeMenuToolCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeMenuToolCell.m; sourceTree = "<group>"; };
+		52BCFD9B212C578E00E0CB4E /* SAMHomeMenuToolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMHomeMenuToolCell.xib; sourceTree = "<group>"; };
+		52BCFD9E212C5FC500E0CB4E /* SAMHomeMenuWalletCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMHomeMenuWalletCell.h; sourceTree = "<group>"; };
+		52BCFD9F212C5FC500E0CB4E /* SAMHomeMenuWalletCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMHomeMenuWalletCell.m; sourceTree = "<group>"; };
+		52BCFDA0212C5FC500E0CB4E /* SAMHomeMenuWalletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SAMHomeMenuWalletCell.xib; sourceTree = "<group>"; };
+		52BCFDA3212C678700E0CB4E /* SAMMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMMeController.h; sourceTree = "<group>"; };
+		52BCFDA4212C678700E0CB4E /* SAMMeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMMeController.m; sourceTree = "<group>"; };
+		52BCFDA6212C684C00E0CB4E /* SAMMeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMMeHeaderView.m; sourceTree = "<group>"; };
+		52BCFDA7212C684C00E0CB4E /* SAMMeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMMeHeaderView.h; sourceTree = "<group>"; };
+		52BCFDA8212C684C00E0CB4E /* SAMMeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMMeHeaderView.xib; sourceTree = "<group>"; };
+		52BCFDAB212C6BC900E0CB4E /* SAMMeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMMeCell.xib; sourceTree = "<group>"; };
+		52BCFDAC212C6BC900E0CB4E /* SAMMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMMeCell.h; sourceTree = "<group>"; };
+		52BCFDAD212C6BC900E0CB4E /* SAMMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMMeCell.m; sourceTree = "<group>"; };
+		52C990CB21369CC3000786F4 /* SAMControllerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMControllerTool.h; sourceTree = "<group>"; };
+		52C990CC21369CC3000786F4 /* SAMControllerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMControllerTool.m; sourceTree = "<group>"; };
+		52CC50432198114A00B4E04E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		52CC50562198671000B4E04E /* SAMWalletInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMWalletInfo.m; sourceTree = "<group>"; };
+		52CC50572198671000B4E04E /* SAMWalletDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMWalletDB.m; sourceTree = "<group>"; };
+		52CC50592198671000B4E04E /* SAMWalletInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMWalletInfo.h; sourceTree = "<group>"; };
+		52CC505A2198671000B4E04E /* SAMWalletDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMWalletDB.h; sourceTree = "<group>"; };
+		52CC505F2198682900B4E04E /* SAMDBConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMDBConst.h; sourceTree = "<group>"; };
+		52CC506021986E6A00B4E04E /* SAMTokenInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTokenInfo.h; sourceTree = "<group>"; };
+		52CC506121986E6A00B4E04E /* SAMTokenInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTokenInfo.m; sourceTree = "<group>"; };
+		52CC50642198767000B4E04E /* SAMTokenNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMTokenNode.m; sourceTree = "<group>"; };
+		52CC50652198767000B4E04E /* SAMTokenNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMTokenNode.h; sourceTree = "<group>"; };
+		52CC50672198768800B4E04E /* SAMTokenUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTokenUtil.h; sourceTree = "<group>"; };
+		52CC50682198768800B4E04E /* SAMTokenUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMTokenUtil.m; sourceTree = "<group>"; };
+		DE49E8C982E137EF047B55A8 /* libPods-SamosWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SamosWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52B14A1821282872007836F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CC50442198114A00B4E04E /* libsqlite3.0.tbd in Frameworks */,
+				526EEDD5212AB72700F40D6A /* Mobile.framework in Frameworks */,
+				B5EB89F799EF385C1BEF7DE5 /* libPods-SamosWallet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C3AD4E21A3095D000CFACA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				27C3AD4F21A30979000CFACA /* SAMNotificationConst.h */,
+				27C3AD5021A30979000CFACA /* SAMNotificationConst.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		3B030AB9288A537CB461330D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DB7E0B9BFCE684CBF789B2C /* Pods-SamosWallet.debug.xcconfig */,
+				4807CED66C3C6C72EABC9D81 /* Pods-SamosWallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		524FFB5C2129630A00C1E3F4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB632129658500C1E3F4 /* SAMLanguage.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		524FFB652129686000C1E3F4 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB672129687500C1E3F4 /* SAMConst.h */,
+				524FFB682129687500C1E3F4 /* SAMConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		524FFB662129686000C1E3F4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				52C990CB21369CC3000786F4 /* SAMControllerTool.h */,
+				52C990CC21369CC3000786F4 /* SAMControllerTool.m */,
+				52835D0421B2825000A0D9A1 /* SAMTool.h */,
+				52835D0521B2825000A0D9A1 /* SAMTool.m */,
+				4B3F72E8236F0DB800613477 /* HaiProtocolTool.h */,
+				4B3F72E9236F0DD500613477 /* HaiProtocolTool.m */,
+				4BE2133423BA284A00013EDC /* NSString+encryptionMD5.h */,
+				4BE2133523BA285C00013EDC /* NSString+encryptionMD5.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		524FFB6A212968D100C1E3F4 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB6B212968F200C1E3F4 /* SAMAppConfig.h */,
+				524FFB6C212968F200C1E3F4 /* SAMAppConfig.m */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		524FFB6F2129726000C1E3F4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB712129726000C1E3F4 /* SAMApi.h */,
+				524FFB772129726000C1E3F4 /* SAMApi.m */,
+				524FFB702129726000C1E3F4 /* SAMNetwork.h */,
+				524FFB782129726000C1E3F4 /* SAMNetwork.m */,
+				524FFB792129726000C1E3F4 /* SAMNetworkConfig.h */,
+				524FFB742129726000C1E3F4 /* SAMNetworkConfig.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		524FFB8221297BBF00C1E3F4 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB8A21297C0900C1E3F4 /* Controller */,
+				524FFB8F21297C0900C1E3F4 /* Model */,
+				524FFB8921297C0900C1E3F4 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		524FFB8921297C0900C1E3F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				523BE68921355EAB00813AD3 /* SAMGuideScrollViewItem.h */,
+				523BE68A21355EAB00813AD3 /* SAMGuideScrollViewItem.m */,
+				523BE68C2135680400813AD3 /* SAMGuideScrollViewItem.xib */,
+				52BC95B92143BDD200EE87C9 /* SAMWalletPasswordPopView.h */,
+				52BC95BA2143BDD200EE87C9 /* SAMWalletPasswordPopView.m */,
+				52BC95BC2143BDF900EE87C9 /* SAMWalletPasswordPopView.xib */,
+				52BC95C12143C51900EE87C9 /* SAMFirstManageWalletCell.h */,
+				52BC95C22143C51900EE87C9 /* SAMFirstManageWalletCell.m */,
+				52BC95C32143C51900EE87C9 /* SAMFirstManageWalletCell.xib */,
+				2720921C21B57ED6000C41DB /* SAMLoadingView.h */,
+				2720921D21B57ED6000C41DB /* SAMLoadingView.m */,
+				2720921F21B57F00000C41DB /* SAMLoadingView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		524FFB8A21297C0900C1E3F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB8B21297C0900C1E3F4 /* SAMTabBarViewController.h */,
+				524FFB8D21297C0900C1E3F4 /* SAMTabBarViewController.m */,
+				523BE68621355C0400813AD3 /* SAMGuideViewController.h */,
+				523BE68721355C0400813AD3 /* SAMGuideViewController.m */,
+				52BC95BE2143C49200EE87C9 /* SAMFirstMananeWalletController.h */,
+				52BC95BF2143C49200EE87C9 /* SAMFirstMananeWalletController.m */,
+				5270C43222113BE0003EE62C /* SAMLoadingViewController.h */,
+				5270C43322113BE0003EE62C /* SAMLoadingViewController.m */,
+				5270C43422113BE0003EE62C /* SAMLoadingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		524FFB8F21297C0900C1E3F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		526EEDA4212A6D9700F40D6A /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDA5212A6D9700F40D6A /* Controller */,
+				526EEDA6212A6D9700F40D6A /* Model */,
+				526EEDA7212A6D9700F40D6A /* View */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		526EEDA5212A6D9700F40D6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				523BE6802134FBAF00813AD3 /* SAMUIWebViewController.h */,
+				523BE6812134FBAF00813AD3 /* SAMUIWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		526EEDA6212A6D9700F40D6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		526EEDA7212A6D9700F40D6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		526EEDA8212A6D9700F40D6A /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDA9212A6D9700F40D6A /* Controller */,
+				526EEDAA212A6D9700F40D6A /* Model */,
+				526EEDAB212A6D9700F40D6A /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		526EEDA9212A6D9700F40D6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52AA909F21304A140065A755 /* SAMSystemSettingController.h */,
+				52AA90A021304A140065A755 /* SAMSystemSettingController.m */,
+				52BCFDA3212C678700E0CB4E /* SAMMeController.h */,
+				52BCFDA4212C678700E0CB4E /* SAMMeController.m */,
+				52AA909221303BFF0065A755 /* SAMAboutUsController.h */,
+				52AA909321303BFF0065A755 /* SAMAboutUsController.m */,
+				523BE6832135578300813AD3 /* SAMManageWalletController.h */,
+				523BE6842135578300813AD3 /* SAMManageWalletController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		526EEDAA212A6D9700F40D6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		526EEDAB212A6D9700F40D6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A3E517213834A400731D84 /* SAMManageWalletCell.h */,
+				52A3E515213834A300731D84 /* SAMManageWalletCell.m */,
+				52A3E516213834A400731D84 /* SAMManageWalletCell.xib */,
+				52AA90B7213054950065A755 /* SAMSelectUnitSheet.h */,
+				52AA90B6213054950065A755 /* SAMSelectUnitSheet.m */,
+				52AA90B5213054950065A755 /* SAMSelectUnitSheet.xib */,
+				52AA90B221304F6D0065A755 /* SAMSelectLanuageCell.h */,
+				52AA90B021304F6D0065A755 /* SAMSelectLanuageCell.m */,
+				52AA90B121304F6D0065A755 /* SAMSelectLanuageCell.xib */,
+				52AA90A221304A720065A755 /* SAMSystemSettingCell.h */,
+				52AA90A421304A730065A755 /* SAMSystemSettingCell.m */,
+				52AA90A321304A730065A755 /* SAMSystemSettingCell.xib */,
+				52AA909521303D460065A755 /* SAMAboutUsHeaderView.h */,
+				52AA909921303D460065A755 /* SAMAboutUsHeaderView.m */,
+				52AA909721303D460065A755 /* SAMAboutUsHeaderView.xib */,
+				52AA909621303D460065A755 /* SAMVersionCell.h */,
+				52AA909821303D460065A755 /* SAMVersionCell.m */,
+				52AA909A21303D460065A755 /* SAMVersionCell.xib */,
+				52BCFDAC212C6BC900E0CB4E /* SAMMeCell.h */,
+				52BCFDAD212C6BC900E0CB4E /* SAMMeCell.m */,
+				52BCFDAB212C6BC900E0CB4E /* SAMMeCell.xib */,
+				52BCFDA7212C684C00E0CB4E /* SAMMeHeaderView.h */,
+				52BCFDA6212C684C00E0CB4E /* SAMMeHeaderView.m */,
+				52BCFDA8212C684C00E0CB4E /* SAMMeHeaderView.xib */,
+				52AA90AB21304DEE0065A755 /* SAMSelectLanuageSheet.h */,
+				52AA90AC21304DEE0065A755 /* SAMSelectLanuageSheet.m */,
+				52AA90AE21304DFA0065A755 /* SAMSelectLanuageSheet.xib */,
+				52A3E5102138310000731D84 /* SAMManageWalletBottomView.h */,
+				52A3E5112138310000731D84 /* SAMManageWalletBottomView.m */,
+				52A3E513213831A600731D84 /* SAMManageWalletBottomView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		526EEDAD212A6DA000F40D6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDC5212A8EF300F40D6A /* SAMHomeWalletHeaderView.h */,
+				526EEDC6212A8EF300F40D6A /* SAMHomeWalletHeaderView.m */,
+				526EEDC8212A8F8D00F40D6A /* SAMHomeWalletHeaderView.xib */,
+				52BCFD8C212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.h */,
+				52BCFD8D212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.m */,
+				52BCFD8E212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.xib */,
+				52BCFD94212C54CB00E0CB4E /* SAMHomeMenuHeaderView.h */,
+				52BCFD95212C54CB00E0CB4E /* SAMHomeMenuHeaderView.m */,
+				52BCFD97212C558200E0CB4E /* SAMHomeMenuHeaderView.xib */,
+				52BCFD99212C578E00E0CB4E /* SAMHomeMenuToolCell.h */,
+				52BCFD9A212C578E00E0CB4E /* SAMHomeMenuToolCell.m */,
+				52BCFD9B212C578E00E0CB4E /* SAMHomeMenuToolCell.xib */,
+				52BCFD9E212C5FC500E0CB4E /* SAMHomeMenuWalletCell.h */,
+				52BCFD9F212C5FC500E0CB4E /* SAMHomeMenuWalletCell.m */,
+				52BCFDA0212C5FC500E0CB4E /* SAMHomeMenuWalletCell.xib */,
+				2714A991219C6248009F0D4C /* SAMAddNewCoinCell.h */,
+				2714A992219C6248009F0D4C /* SAMAddNewCoinCell.m */,
+				2714A993219C6248009F0D4C /* SAMAddNewCoinCell.xib */,
+				52B5673421B22C3A00796976 /* SAMCoinDetailHeader.h */,
+				52B5673521B22C3A00796976 /* SAMCoinDetailHeader.m */,
+				52B5673721B22C4F00796976 /* SAMCoinDetailHeader.xib */,
+				52B5673921B2367000796976 /* SAMCoinTradeRecordListCell.h */,
+				52B5673A21B2367000796976 /* SAMCoinTradeRecordListCell.m */,
+				52B5673B21B2367000796976 /* SAMCoinTradeRecordListCell.xib */,
+				52B5673E21B2388C00796976 /* SAMTradeBottomBar.h */,
+				52B5673F21B2388C00796976 /* SAMTradeBottomBar.m */,
+				52B5674121B2393400796976 /* SAMTradeBottomBar.xib */,
+				52835CFF21B27AB900A0D9A1 /* SAMTradeRecordDetailCell.h */,
+				52835D0021B27AB900A0D9A1 /* SAMTradeRecordDetailCell.m */,
+				52835D0121B27AB900A0D9A1 /* SAMTradeRecordDetailCell.xib */,
+				52835D0721B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.h */,
+				52835D0821B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.m */,
+				52835D0A21B289D600A0D9A1 /* SAMTradeRecordDetailBottomBar.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		526EEDAE212A6DA000F40D6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDAF212A6DD300F40D6A /* SAMHomeWalletController.h */,
+				526EEDB0212A6DD300F40D6A /* SAMHomeWalletController.m */,
+				526EEDCD212A9A9F00F40D6A /* SAMHomeSideController.h */,
+				526EEDCE212A9A9F00F40D6A /* SAMHomeSideController.m */,
+				52BCFD91212C545300E0CB4E /* SAMHomeMenuController.h */,
+				52BCFD92212C545300E0CB4E /* SAMHomeMenuController.m */,
+				2714A98E219C6206009F0D4C /* SAMAddNewCoinController.h */,
+				2714A98F219C6206009F0D4C /* SAMAddNewCoinController.m */,
+				52B5673121B22B4300796976 /* SAMCoinDetailController.h */,
+				52B5673221B22B4300796976 /* SAMCoinDetailController.m */,
+				52835CFC21B2778F00A0D9A1 /* SAMTradeRecordDetailController.h */,
+				52835CFD21B2778F00A0D9A1 /* SAMTradeRecordDetailController.m */,
+				4B8F560123643EAA0049EAA7 /* HaiExplorerController.m */,
+				4B8F560323643EE30049EAA7 /* HaiExplorerController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		526EEDB2212A716A00F40D6A /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDB4212A716A00F40D6A /* SAMDeviceInfo.h */,
+				526EEDB3212A716A00F40D6A /* SAMDeviceInfo.m */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		526EEDD0212AA6E400F40D6A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDD1212AA70D00F40D6A /* UIColor+SAMAddition.h */,
+				526EEDD2212AA70D00F40D6A /* UIColor+SAMAddition.m */,
+				528EA0B8217329D700F00809 /* NSString+SAMAddtion.h */,
+				528EA0B9217329D700F00809 /* NSString+SAMAddtion.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		526EEDD6212ABFE300F40D6A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDD7212ABFE300F40D6A /* Reachability.m */,
+				526EEDD8212ABFE300F40D6A /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		52835D0C21B28CD200A0D9A1 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				52835D0D21B28CD200A0D9A1 /* Controller */,
+				52835D0E21B28CD200A0D9A1 /* Model */,
+				52835D0F21B28CD200A0D9A1 /* View */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		52835D0D21B28CD200A0D9A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52835D1021B28D5000A0D9A1 /* SAMSendViewController.h */,
+				52835D1121B28D5000A0D9A1 /* SAMSendViewController.m */,
+				52835D2221B2B1E400A0D9A1 /* SAMReceiveViewController.h */,
+				52835D2321B2B1E400A0D9A1 /* SAMReceiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52835D0E21B28CD200A0D9A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52835D0F21B28CD200A0D9A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52835D2C21B2BBB700A0D9A1 /* SAMReceiveBottomBar.h */,
+				52835D2A21B2BBB600A0D9A1 /* SAMReceiveBottomBar.m */,
+				52835D2B21B2BBB600A0D9A1 /* SAMReceiveBottomBar.xib */,
+				52835D1B21B297EC00A0D9A1 /* SAMSendBottomBar.h */,
+				52835D1A21B297EC00A0D9A1 /* SAMSendBottomBar.m */,
+				52835D1821B297E300A0D9A1 /* SAMSendBottomBar.xib */,
+				52835D1321B28DFA00A0D9A1 /* SAMSendCell.h */,
+				52835D1421B28DFA00A0D9A1 /* SAMSendCell.m */,
+				52835D1521B28DFA00A0D9A1 /* SAMSendCell.xib */,
+				52835D1D21B299E900A0D9A1 /* SAMSendDetailSheet.h */,
+				52835D1E21B299E900A0D9A1 /* SAMSendDetailSheet.m */,
+				52835D2021B299F600A0D9A1 /* SAMSendDetailSheet.xib */,
+				52835D2521B2B2FA00A0D9A1 /* SAMReceiveCell.h */,
+				52835D2621B2B2FA00A0D9A1 /* SAMReceiveCell.m */,
+				52835D2721B2B2FA00A0D9A1 /* SAMReceiveCell.xib */,
+				52A8F50A21B38AC70040ECE4 /* SAMSendInputPwdSheet.h */,
+				52A8F50B21B38AC70040ECE4 /* SAMSendInputPwdSheet.m */,
+				52A8F50D21B38AD30040ECE4 /* SAMSendInputPwdSheet.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		529751802169BFB7009F41AC /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				529751812169BFB7009F41AC /* SAMPathManager.h */,
+				529751832169BFB7009F41AC /* SAMPathManager.m */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		529D6B7521A937BD000756D7 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				529D6B7621A937D2000756D7 /* SAMWalletUtil.h */,
+				529D6B7721A937D2000756D7 /* SAMWalletUtil.m */,
+				529D6B7C21A95EA9000756D7 /* SAMWalletAddressInfo.h */,
+				529D6B7D21A95EA9000756D7 /* SAMWalletAddressInfo.m */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		529E7FEB21A15B8C00502A36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27C3AD5521A30E0B000CFACA /* SAMCoinBalanceInfo.h */,
+				27C3AD5621A30E0B000CFACA /* SAMCoinBalanceInfo.m */,
+				52835CF921B268F300A0D9A1 /* SAMTradeRecordListModel.h */,
+				52835CFA21B268F300A0D9A1 /* SAMTradeRecordListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52A3E51D21383AB400731D84 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				52A3E51E21383AB400731D84 /* Controller */,
+				52A3E51F21383AB400731D84 /* Model */,
+				52A3E52021383AB400731D84 /* View */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		52A3E51E21383AB400731D84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52A8DE97213C3427000BD652 /* SAMVerifyWordsController.h */,
+				52A8DE98213C3428000BD652 /* SAMVerifyWordsController.m */,
+				52A83FCE213981EB00712DF0 /* SAMImportWalletController.h */,
+				52A83FCD213981EB00712DF0 /* SAMImportWalletController.m */,
+				52A3E52121383B1D00731D84 /* SAMCreateWalletController.h */,
+				52A3E52221383B1D00731D84 /* SAMCreateWalletController.m */,
+				52A8DE7C213C1ABE000BD652 /* SAMBackupWordsController.h */,
+				52A8DE7D213C1ABE000BD652 /* SAMBackupWordsController.m */,
+				52A8F50F21B3962A0040ECE4 /* SAMWalletDetailController.h */,
+				52A8F51021B3962A0040ECE4 /* SAMWalletDetailController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52A3E51F21383AB400731D84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52A3E52021383AB400731D84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A8F51921B3A3430040ECE4 /* SAMWalletDetailBottomBar.h */,
+				52A8F51721B3A3430040ECE4 /* SAMWalletDetailBottomBar.m */,
+				52A8F51821B3A3430040ECE4 /* SAMWalletDetailBottomBar.xib */,
+				52A8DE9A213C348A000BD652 /* SAMVerifyWordsCell.h */,
+				52A8DE9B213C348B000BD652 /* SAMVerifyWordsCell.m */,
+				52A8DE9C213C348B000BD652 /* SAMVerifyWordsCell.xib */,
+				52A8DE94213C32DD000BD652 /* SAMSaveWordsAlert.h */,
+				52A8DE93213C32DD000BD652 /* SAMSaveWordsAlert.m */,
+				52A8DE92213C32DD000BD652 /* SAMSaveWordsAlert.xib */,
+				52A83FD2213983C600712DF0 /* SAMWalletMemorizingWordsItem.h */,
+				52A83FD0213983C600712DF0 /* SAMWalletMemorizingWordsItem.m */,
+				52A83FD1213983C600712DF0 /* SAMWalletMemorizingWordsItem.xib */,
+				52A83FC82139789500712DF0 /* SAMWalletIconListItem.h */,
+				52A83FCA2139789500712DF0 /* SAMWalletIconListItem.m */,
+				52A83FC92139789500712DF0 /* SAMWalletIconListItem.xib */,
+				52A83FC5213973B500712DF0 /* SAMWalletIconItem.h */,
+				52A83FC3213973B500712DF0 /* SAMWalletIconItem.m */,
+				52A83FC4213973B500712DF0 /* SAMWalletIconItem.xib */,
+				522BA31B2138DA6100625D21 /* SAMWalletNameItem.h */,
+				522BA31C2138DA6100625D21 /* SAMWalletNameItem.m */,
+				522BA31D2138DA6100625D21 /* SAMWalletNameItem.xib */,
+				52A8DE7F213C1B7B000BD652 /* SAMBackupWordsCell.h */,
+				52A8DE80213C1B7B000BD652 /* SAMBackupWordsCell.m */,
+				52A8DE81213C1B7B000BD652 /* SAMBackupWordsCell.xib */,
+				52A8F51221B3978C0040ECE4 /* SAMWalletDetailCell.h */,
+				52A8F51321B3978C0040ECE4 /* SAMWalletDetailCell.m */,
+				52A8F51421B3978C0040ECE4 /* SAMWalletDetailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52A8DE84213C256F000BD652 /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				52A8DE86213C256F000BD652 /* SAMPopupView.h */,
+				52A8DE85213C256F000BD652 /* SAMPopupView.m */,
+			);
+			path = PopupView;
+			sourceTree = "<group>";
+		};
+		52AA90A721304CED0065A755 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				52AA90A821304CED0065A755 /* SAMActionSheet.h */,
+				52AA90A921304CED0065A755 /* SAMActionSheet.m */,
+			);
+			path = ActionSheet;
+			sourceTree = "<group>";
+		};
+		52B14A1221282872007836F3 = {
+			isa = PBXGroup;
+			children = (
+				52B14A1D21282872007836F3 /* SamosWallet */,
+				52B14A1C21282872007836F3 /* Products */,
+				3B030AB9288A537CB461330D /* Pods */,
+				EAFC1D329F82A0C5F66D951E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52B14A1C21282872007836F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52B14A1B21282872007836F3 /* SamosWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52B14A1D21282872007836F3 /* SamosWallet */ = {
+			isa = PBXGroup;
+			children = (
+				524FFB5C2129630A00C1E3F4 /* Resource */,
+				52B14A3621282D77007836F3 /* Class */,
+				52B14A3B21282D77007836F3 /* Lib */,
+				52B14A3421282D77007836F3 /* Util */,
+				52B14A3521282D77007836F3 /* Widget */,
+				52B14A2721282873007836F3 /* Assets.xcassets */,
+				52B14A2C21282873007836F3 /* Info.plist */,
+				52B14A2D21282873007836F3 /* main.m */,
+				524FFB6E21296AD500C1E3F4 /* PrefixHeader.pch */,
+				526EEDE1212AF03100F40D6A /* LaunchScreen.xib */,
+			);
+			path = SamosWallet;
+			sourceTree = "<group>";
+		};
+		52B14A3421282D77007836F3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				529D6B7521A937BD000756D7 /* Wallet */,
+				27C3AD4E21A3095D000CFACA /* Notification */,
+				52CC50632198767000B4E04E /* Token */,
+				52CC50552198671000B4E04E /* DB */,
+				529751802169BFB7009F41AC /* Path */,
+				526EEDD0212AA6E400F40D6A /* Category */,
+				526EEDB2212A716A00F40D6A /* DeviceInfo */,
+				524FFB6F2129726000C1E3F4 /* Network */,
+				524FFB6A212968D100C1E3F4 /* AppConfig */,
+				524FFB652129686000C1E3F4 /* Const */,
+				524FFB662129686000C1E3F4 /* Tool */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		52B14A3521282D77007836F3 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				52A8DE84213C256F000BD652 /* PopupView */,
+				52AA90A721304CED0065A755 /* ActionSheet */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		52B14A3621282D77007836F3 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				52B14A3821282D77007836F3 /* AppDelegate */,
+				524FFB8221297BBF00C1E3F4 /* Root */,
+				52B14A3721282D77007836F3 /* Home */,
+				526EEDA4212A6D9700F40D6A /* Find */,
+				526EEDA8212A6D9700F40D6A /* Me */,
+				52A3E51D21383AB400731D84 /* Wallet */,
+				52835D0C21B28CD200A0D9A1 /* Trade */,
+				52B14A3F21282F04007836F3 /* Base */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		52B14A3721282D77007836F3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDAE212A6DA000F40D6A /* Controller */,
+				529E7FEB21A15B8C00502A36 /* Model */,
+				526EEDAD212A6DA000F40D6A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		52B14A3821282D77007836F3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				52B14A3921282D77007836F3 /* SAMAppDelegate.h */,
+				52B14A3A21282D77007836F3 /* SAMAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		52B14A3B21282D77007836F3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				526EEDD6212ABFE300F40D6A /* Reachability */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		52B14A3F21282F04007836F3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52B14A4021282F04007836F3 /* Controller */,
+				52B14A4121282F04007836F3 /* Model */,
+				52B14A4221282F04007836F3 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52B14A4021282F04007836F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52A3E51A2138382800731D84 /* SAMBaseCollectionViewController.h */,
+				52A3E51B2138382900731D84 /* SAMBaseCollectionViewController.m */,
+				52B14A4321282F1F007836F3 /* SAMBaseViewController.h */,
+				52B14A4421282F1F007836F3 /* SAMBaseViewController.m */,
+				52B14A4621282F72007836F3 /* SAMBaseTableViewController.h */,
+				52B14A4721282F72007836F3 /* SAMBaseTableViewController.m */,
+				526EEDB6212A78EB00F40D6A /* SAMNavigationController.h */,
+				526EEDB7212A78EB00F40D6A /* SAMNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52B14A4121282F04007836F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52B14A4221282F04007836F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A28DBD2133EF51007691DC /* SAMNavigationBar.h */,
+				52A28DBC2133EF51007691DC /* SAMNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52CC50552198671000B4E04E /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				52CC505A2198671000B4E04E /* SAMWalletDB.h */,
+				52CC50572198671000B4E04E /* SAMWalletDB.m */,
+				52CC50592198671000B4E04E /* SAMWalletInfo.h */,
+				52CC50562198671000B4E04E /* SAMWalletInfo.m */,
+				52CC505F2198682900B4E04E /* SAMDBConst.h */,
+				52CC506021986E6A00B4E04E /* SAMTokenInfo.h */,
+				52CC506121986E6A00B4E04E /* SAMTokenInfo.m */,
+				529E7FEC21A15BD600502A36 /* SAMCoinRateInfo.h */,
+				529E7FED21A15BD600502A36 /* SAMCoinRateInfo.m */,
+				27A3405721ADA0DF0036B336 /* SAMWalletTokenInfo.h */,
+				27A3405821ADA0DF0036B336 /* SAMWalletTokenInfo.m */,
+				4BE5A9732376D01400E3E522 /* LockTokenInfo.h */,
+				4BE5A9742376D0A300E3E522 /* LockTokenInfo.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		52CC50632198767000B4E04E /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				52CC50652198767000B4E04E /* SAMTokenNode.h */,
+				52CC50642198767000B4E04E /* SAMTokenNode.m */,
+				52CC50672198768800B4E04E /* SAMTokenUtil.h */,
+				52CC50682198768800B4E04E /* SAMTokenUtil.m */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		EAFC1D329F82A0C5F66D951E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52CC50432198114A00B4E04E /* libsqlite3.0.tbd */,
+				526EEDD4212AB72700F40D6A /* Mobile.framework */,
+				DE49E8C982E137EF047B55A8 /* libPods-SamosWallet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52B14A1A21282872007836F3 /* SamosWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B14A3121282873007836F3 /* Build configuration list for PBXNativeTarget "SamosWallet" */;
+			buildPhases = (
+				B5BB9CD508612DB793BEB98E /* [CP] Check Pods Manifest.lock */,
+				52B14A1721282872007836F3 /* Sources */,
+				52B14A1821282872007836F3 /* Frameworks */,
+				52B14A1921282872007836F3 /* Resources */,
+				099FE657AEC433E19F6658B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamosWallet;
+			productName = SamosWallet;
+			productReference = 52B14A1B21282872007836F3 /* SamosWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52B14A1321282872007836F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SAM;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Samos;
+				TargetAttributes = {
+					52B14A1A21282872007836F3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 52B14A1621282872007836F3 /* Build configuration list for PBXProject "SamosWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 52B14A1221282872007836F3;
+			productRefGroup = 52B14A1C21282872007836F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52B14A1A21282872007836F3 /* SamosWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52B14A1921282872007836F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BC95C52143C51900EE87C9 /* SAMFirstManageWalletCell.xib in Resources */,
+				52B5674221B2393400796976 /* SAMTradeBottomBar.xib in Resources */,
+				52A83FC7213973B600712DF0 /* SAMWalletIconItem.xib in Resources */,
+				526EEDE2212AF03100F40D6A /* LaunchScreen.xib in Resources */,
+				52AA90B8213054950065A755 /* SAMSelectUnitSheet.xib in Resources */,
+				52835D0321B27AB900A0D9A1 /* SAMTradeRecordDetailCell.xib in Resources */,
+				52AA909B21303D460065A755 /* SAMAboutUsHeaderView.xib in Resources */,
+				52BCFD9D212C578E00E0CB4E /* SAMHomeMenuToolCell.xib in Resources */,
+				522BA31F2138DA6100625D21 /* SAMWalletNameItem.xib in Resources */,
+				52AA90A521304A730065A755 /* SAMSystemSettingCell.xib in Resources */,
+				52835D1921B297E300A0D9A1 /* SAMSendBottomBar.xib in Resources */,
+				52835D2E21B2BBB700A0D9A1 /* SAMReceiveBottomBar.xib in Resources */,
+				2720922021B57F00000C41DB /* SAMLoadingView.xib in Resources */,
+				52BCFDAA212C684C00E0CB4E /* SAMMeHeaderView.xib in Resources */,
+				52BCFDAE212C6BC900E0CB4E /* SAMMeCell.xib in Resources */,
+				52BCFDA2212C5FC500E0CB4E /* SAMHomeMenuWalletCell.xib in Resources */,
+				52AA909E21303D460065A755 /* SAMVersionCell.xib in Resources */,
+				52835D1721B28DFA00A0D9A1 /* SAMSendCell.xib in Resources */,
+				52BC95BD2143BDF900EE87C9 /* SAMWalletPasswordPopView.xib in Resources */,
+				52835D2921B2B2FA00A0D9A1 /* SAMReceiveCell.xib in Resources */,
+				52BCFD90212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.xib in Resources */,
+				52A8F51B21B3A3430040ECE4 /* SAMWalletDetailBottomBar.xib in Resources */,
+				2714A995219C6248009F0D4C /* SAMAddNewCoinCell.xib in Resources */,
+				5270C43622113BE0003EE62C /* SAMLoadingViewController.xib in Resources */,
+				524FFB612129658500C1E3F4 /* SAMLanguage.strings in Resources */,
+				52BCFD98212C558200E0CB4E /* SAMHomeMenuHeaderView.xib in Resources */,
+				52A8DE9E213C348B000BD652 /* SAMVerifyWordsCell.xib in Resources */,
+				52A8F50E21B38AD30040ECE4 /* SAMSendInputPwdSheet.xib in Resources */,
+				52835D2121B299F600A0D9A1 /* SAMSendDetailSheet.xib in Resources */,
+				52A3E519213834A400731D84 /* SAMManageWalletCell.xib in Resources */,
+				52AA90AF21304DFA0065A755 /* SAMSelectLanuageSheet.xib in Resources */,
+				52B14A2821282873007836F3 /* Assets.xcassets in Resources */,
+				52A8DE95213C32DD000BD652 /* SAMSaveWordsAlert.xib in Resources */,
+				52A8F51621B3978C0040ECE4 /* SAMWalletDetailCell.xib in Resources */,
+				52AA90B421304F6D0065A755 /* SAMSelectLanuageCell.xib in Resources */,
+				52A83FCB2139789500712DF0 /* SAMWalletIconListItem.xib in Resources */,
+				52B5673D21B2367000796976 /* SAMCoinTradeRecordListCell.xib in Resources */,
+				52B5673821B22C4F00796976 /* SAMCoinDetailHeader.xib in Resources */,
+				523BE68D2135680400813AD3 /* SAMGuideScrollViewItem.xib in Resources */,
+				52A83FD4213983C600712DF0 /* SAMWalletMemorizingWordsItem.xib in Resources */,
+				52A8DE83213C1B7B000BD652 /* SAMBackupWordsCell.xib in Resources */,
+				526EEDC9212A8F8D00F40D6A /* SAMHomeWalletHeaderView.xib in Resources */,
+				52A3E514213831A600731D84 /* SAMManageWalletBottomView.xib in Resources */,
+				52835D0B21B289D600A0D9A1 /* SAMTradeRecordDetailBottomBar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		099FE657AEC433E19F6658B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SamosWallet/Pods-SamosWallet-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SamosWallet/Pods-SamosWallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BB9CD508612DB793BEB98E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SamosWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52B14A1721282872007836F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524FFB7D2129726000C1E3F4 /* SAMApi.m in Sources */,
+				52B14A3C21282D77007836F3 /* SAMAppDelegate.m in Sources */,
+				524FFB7E2129726000C1E3F4 /* SAMNetwork.m in Sources */,
+				52BCFD93212C545300E0CB4E /* SAMHomeMenuController.m in Sources */,
+				52A3E52321383B1D00731D84 /* SAMCreateWalletController.m in Sources */,
+				526EEDB8212A78EB00F40D6A /* SAMNavigationController.m in Sources */,
+				526EEDB5212A716A00F40D6A /* SAMDeviceInfo.m in Sources */,
+				52AA909C21303D460065A755 /* SAMVersionCell.m in Sources */,
+				522BA31E2138DA6100625D21 /* SAMWalletNameItem.m in Sources */,
+				52C990CD21369CC3000786F4 /* SAMControllerTool.m in Sources */,
+				52A8DE9D213C348B000BD652 /* SAMVerifyWordsCell.m in Sources */,
+				52AA909D21303D460065A755 /* SAMAboutUsHeaderView.m in Sources */,
+				52BC95BB2143BDD200EE87C9 /* SAMWalletPasswordPopView.m in Sources */,
+				526EEDD3212AA70D00F40D6A /* UIColor+SAMAddition.m in Sources */,
+				524FFB692129687500C1E3F4 /* SAMConst.m in Sources */,
+				524FFB6D212968F200C1E3F4 /* SAMAppConfig.m in Sources */,
+				526EEDB1212A6DD300F40D6A /* SAMHomeWalletController.m in Sources */,
+				52BCFDA5212C678700E0CB4E /* SAMMeController.m in Sources */,
+				528EA0BA217329D700F00809 /* NSString+SAMAddtion.m in Sources */,
+				52B5674021B2388C00796976 /* SAMTradeBottomBar.m in Sources */,
+				52A83FC6213973B600712DF0 /* SAMWalletIconItem.m in Sources */,
+				52A8F51A21B3A3430040ECE4 /* SAMWalletDetailBottomBar.m in Sources */,
+				52AA90A121304A150065A755 /* SAMSystemSettingController.m in Sources */,
+				52BCFD8F212C4E3F00E0CB4E /* SAMHomeWalletCoinCell.m in Sources */,
+				52AA90AD21304DEE0065A755 /* SAMSelectLanuageSheet.m in Sources */,
+				526EEDCF212A9A9F00F40D6A /* SAMHomeSideController.m in Sources */,
+				52AA90B9213054950065A755 /* SAMSelectUnitSheet.m in Sources */,
+				52A3E518213834A400731D84 /* SAMManageWalletCell.m in Sources */,
+				52AA909421303BFF0065A755 /* SAMAboutUsController.m in Sources */,
+				52A28DBE2133EF51007691DC /* SAMNavigationBar.m in Sources */,
+				52835CFE21B2778F00A0D9A1 /* SAMTradeRecordDetailController.m in Sources */,
+				526EEDD9212ABFE400F40D6A /* Reachability.m in Sources */,
+				27C3AD5721A30E0B000CFACA /* SAMCoinBalanceInfo.m in Sources */,
+				5270C43522113BE0003EE62C /* SAMLoadingViewController.m in Sources */,
+				4BE5A9752376D0A300E3E522 /* LockTokenInfo.m in Sources */,
+				523BE6852135578300813AD3 /* SAMManageWalletController.m in Sources */,
+				52A8F51521B3978C0040ECE4 /* SAMWalletDetailCell.m in Sources */,
+				52A8DE7E213C1ABE000BD652 /* SAMBackupWordsController.m in Sources */,
+				523BE68821355C0400813AD3 /* SAMGuideViewController.m in Sources */,
+				52835D1221B28D5000A0D9A1 /* SAMSendViewController.m in Sources */,
+				52A8DE99213C3428000BD652 /* SAMVerifyWordsController.m in Sources */,
+				529D6B7E21A95EA9000756D7 /* SAMWalletAddressInfo.m in Sources */,
+				52A83FCF213981EB00712DF0 /* SAMImportWalletController.m in Sources */,
+				52B5673321B22B4300796976 /* SAMCoinDetailController.m in Sources */,
+				4B8F560223643EAA0049EAA7 /* HaiExplorerController.m in Sources */,
+				52CC505C2198671000B4E04E /* SAMWalletInfo.m in Sources */,
+				2720921E21B57ED6000C41DB /* SAMLoadingView.m in Sources */,
+				52835D0221B27AB900A0D9A1 /* SAMTradeRecordDetailCell.m in Sources */,
+				52B5673621B22C3A00796976 /* SAMCoinDetailHeader.m in Sources */,
+				52CC50692198768800B4E04E /* SAMTokenUtil.m in Sources */,
+				52A3E5122138310000731D84 /* SAMManageWalletBottomView.m in Sources */,
+				52CC505D2198671000B4E04E /* SAMWalletDB.m in Sources */,
+				52835D1F21B299E900A0D9A1 /* SAMSendDetailSheet.m in Sources */,
+				52BCFDA9212C684C00E0CB4E /* SAMMeHeaderView.m in Sources */,
+				52BC95C02143C49200EE87C9 /* SAMFirstMananeWalletController.m in Sources */,
+				52BCFD9C212C578E00E0CB4E /* SAMHomeMenuToolCell.m in Sources */,
+				52AA90A621304A730065A755 /* SAMSystemSettingCell.m in Sources */,
+				52835D2D21B2BBB700A0D9A1 /* SAMReceiveBottomBar.m in Sources */,
+				52835D1C21B297EC00A0D9A1 /* SAMSendBottomBar.m in Sources */,
+				52BC95C42143C51900EE87C9 /* SAMFirstManageWalletCell.m in Sources */,
+				52A8F51121B3962A0040ECE4 /* SAMWalletDetailController.m in Sources */,
+				52BCFDAF212C6BC900E0CB4E /* SAMMeCell.m in Sources */,
+				52B14A4521282F1F007836F3 /* SAMBaseViewController.m in Sources */,
+				523BE6822134FBAF00813AD3 /* SAMUIWebViewController.m in Sources */,
+				52A83FD3213983C600712DF0 /* SAMWalletMemorizingWordsItem.m in Sources */,
+				524FFB7B2129726000C1E3F4 /* SAMNetworkConfig.m in Sources */,
+				52CC506221986E6A00B4E04E /* SAMTokenInfo.m in Sources */,
+				52A8DE87213C256F000BD652 /* SAMPopupView.m in Sources */,
+				27A3405921ADA0DF0036B336 /* SAMWalletTokenInfo.m in Sources */,
+				52835D0621B2825000A0D9A1 /* SAMTool.m in Sources */,
+				52835D0921B2898D00A0D9A1 /* SAMTradeRecordDetailBottomBar.m in Sources */,
+				526EEDC7212A8EF300F40D6A /* SAMHomeWalletHeaderView.m in Sources */,
+				523BE68B21355EAB00813AD3 /* SAMGuideScrollViewItem.m in Sources */,
+				52A8DE96213C32DD000BD652 /* SAMSaveWordsAlert.m in Sources */,
+				529D6B7821A937D2000756D7 /* SAMWalletUtil.m in Sources */,
+				52BCFDA1212C5FC500E0CB4E /* SAMHomeMenuWalletCell.m in Sources */,
+				52BCFD96212C54CB00E0CB4E /* SAMHomeMenuHeaderView.m in Sources */,
+				52835D1621B28DFA00A0D9A1 /* SAMSendCell.m in Sources */,
+				52CC50662198767000B4E04E /* SAMTokenNode.m in Sources */,
+				4B3F72EA236F0DD500613477 /* HaiProtocolTool.m in Sources */,
+				529E7FEE21A15BD600502A36 /* SAMCoinRateInfo.m in Sources */,
+				52B5673C21B2367000796976 /* SAMCoinTradeRecordListCell.m in Sources */,
+				52835D2421B2B1E400A0D9A1 /* SAMReceiveViewController.m in Sources */,
+				52835CFB21B268F300A0D9A1 /* SAMTradeRecordListModel.m in Sources */,
+				52B14A4821282F72007836F3 /* SAMBaseTableViewController.m in Sources */,
+				52A8DE82213C1B7B000BD652 /* SAMBackupWordsCell.m in Sources */,
+				4BE2133623BA285C00013EDC /* NSString+encryptionMD5.m in Sources */,
+				524FFB9121297C0900C1E3F4 /* SAMTabBarViewController.m in Sources */,
+				52A83FCC2139789500712DF0 /* SAMWalletIconListItem.m in Sources */,
+				529751852169BFB7009F41AC /* SAMPathManager.m in Sources */,
+				27C3AD5121A30979000CFACA /* SAMNotificationConst.m in Sources */,
+				52B14A2E21282873007836F3 /* main.m in Sources */,
+				52AA90AA21304CEE0065A755 /* SAMActionSheet.m in Sources */,
+				52A3E51C2138382900731D84 /* SAMBaseCollectionViewController.m in Sources */,
+				2714A994219C6248009F0D4C /* SAMAddNewCoinCell.m in Sources */,
+				2714A990219C6206009F0D4C /* SAMAddNewCoinController.m in Sources */,
+				52AA90B321304F6D0065A755 /* SAMSelectLanuageCell.m in Sources */,
+				52A8F50C21B38AC70040ECE4 /* SAMSendInputPwdSheet.m in Sources */,
+				52835D2821B2B2FA00A0D9A1 /* SAMReceiveCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		524FFB632129658500C1E3F4 /* SAMLanguage.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524FFB622129658500C1E3F4 /* en */,
+				524FFB642129660800C1E3F4 /* zh-Hans */,
+			);
+			name = SAMLanguage.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52B14A2F21282873007836F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52B14A3021282873007836F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52B14A3221282873007836F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB7E0B9BFCE684CBF789B2C /* Pods-SamosWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hua feng (NMCM56G93P)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 42N75EU86K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SamosWallet/Frameworks",
+				);
+				GCC_PREFIX_HEADER = SamosWallet/PrefixHeader.pch;
+				INFOPLIST_FILE = SamosWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.samos.galt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = my0501;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52B14A3321282873007836F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4807CED66C3C6C72EABC9D81 /* Pods-SamosWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hua feng (NMCM56G93P)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 42N75EU86K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SamosWallet/Frameworks",
+				);
+				GCC_PREFIX_HEADER = SamosWallet/PrefixHeader.pch;
+				INFOPLIST_FILE = SamosWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.samos.galt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = my0501;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52B14A1621282872007836F3 /* Build configuration list for PBXProject "SamosWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B14A2F21282873007836F3 /* Debug */,
+				52B14A3021282873007836F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B14A3121282873007836F3 /* Build configuration list for PBXNativeTarget "SamosWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B14A3221282873007836F3 /* Debug */,
+				52B14A3321282873007836F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52B14A1321282872007836F3 /* Project object */;
+}

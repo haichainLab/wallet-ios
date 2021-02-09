@@ -1,0 +1,116 @@
+/* 
+  SAMLanguage.strings
+  SamosWallet
+
+  Created by zys on 2018/8/19.
+  Copyright © 2018年 zys. All rights reserved.
+*/
+
+/// 首页
+"language_total_assets" = "总资产";
+"language_add" = "添加";
+"language_scan_qrcode" = "扫描二维码";
+"language_create_wallet" = "创建钱包";
+"language_manage_wallet" = "管理钱包";
+"language_welcome_use_wallet" = "欢迎使用GALT钱包，如果您是第一次使用，请先创建一个钱包，如果您已有钱包请导入您之前钱包的助记词（助记词）。";
+"language_welcome_to_hai" = "欢迎进入Haichain的世界！";
+
+/// 个人中心
+"language_my_wallet" = "我的钱包";
+"language_system_setting" = "系统设置";
+"language_pricing_unit" = "计价单位";
+"language_select_language" = "选择语言";
+"language_english" = "英语";
+"language_chinese" = "中文";
+"language_about_us" = "关于我们";
+"language_about_us_desc" = "安全稳定、转帐免费、多币种钱包";
+"language_check_update" = "检查更新";
+
+/// 币种详情页、交易
+"language_trade_record" = "交易记录";
+"language_trade_sender" = "发送方：";
+"language_trade_receiver" = "接收方：";
+"language_recent_trade_record" = "最近的交易记录";
+"language_trade_in_big" = "转入";
+"language_trade_out_big" = "转出";
+"language_trade_in_small" = "转入";
+"language_trade_out_small" = "转出";
+"language_trade_in_num" = "转入数目";
+"language_copy_address" = "复制地址";
+"language_save_to_ablum" = "保存到相册";
+"language_share" = "分享";
+"language_trade_out_address" = "转出地址";
+"language_input_or_press_to_paste_address" = "输入或按下粘贴地址";
+"language_input_trade_out_num" = "请输入转出数目";
+"language_next_big" = "下一步";
+"language_next_small" = "下一步";
+"language_trade_out_detail" = "付款明细";
+"language_trade_type" = "交易类型：";
+"language_trade_in_address" = "转入地址：";
+"language_trade_num" = "交易数额：";
+"language_trade_time" = "交易时间：";
+"language_confirm_big" = "确认";
+"language_confirm_small" = "确认";
+"language_wallet_pwd" = "钱包密码";
+"language_pwd" = "密码";
+"language_input_pwd" = "请输入密码";
+"language_input_pwd_again" = "请输入密码";
+"language_pwd_prompt" = "密码提示(可不填)";
+"language_input_pwd_prompt" = "请输入密码提示";
+"language_pwd_func" = "请为您的钱包创建一个密码，该密码用于交易及删除钱包等敏感操作。";
+"language_pwd_prompt_info" = "我们不会记录您的密码，密码遗失后无法找回，为防止遗忘，您可以设置一个简单的密码提示。";
+"language_pwd_is_different" = "两次输入密码不一致！";
+
+
+/// 钱包相关
+"language_create_new_wallet" = "创建钱包";
+"language_import_a_wallet" = "导入钱包";
+"language_new_wallet" = "创建钱包";
+"language_wallet_name" = "钱包名称";
+"language_input_wallet_name" = "请输入钱包名称";
+"language_wallet_name_exist" = "钱包名称已存在";
+"language_wallet_avatar" = "钱包图标";
+"language_select_wallet_avatar" = "请选择一个图像作为钱包的图标";
+"language_to_secure_asset" = "请勿截图和拍照";
+"language_not_copy_seed" = "如果有人获取了你的助记词将直接获取你的资产！";
+"language_got_it" = "知道了";
+"language_backup_seed_small" = "备份助记词";
+"language_backup_seed_big" = "备份助记词";
+"language_write_seed" = "请抄写下你的助记词";
+"language_write_seed_guide" = "助记词用于恢复钱包，请将它准确地抄写在纸上，并存放在只有你知道的安全的地方，如果遗失助记词你的钱包将无法恢复。为了钱包的安全请不要将助记词存储到网络上。";
+"language_gen_new_seed" = "重新生成";
+"language_rewrite_seed_tip" = "验证助记词";
+"language_input_seed" = "在下方输入框输入您刚才抄写的助记词";
+"language_import" = "导入";
+"language_load_wallet" = "导入钱包";
+"language_remove_wallet" = "删除钱包";
+"language_warning" = "警告";
+"language_remove_wallet_alert" = "请慎重，删除操作无法恢复！";
+"language_remove_wallet_success" = "删除成功";
+"language_copy_success" = "拷贝成功";
+"language_wallet_create_success" = "钱包创建成功";
+"language_new_asset" = "添加新资产";
+"language_system_settings" = "系统设置";
+"language_save" = "保存";
+"language_save_success" = "保存成功";
+"language_input_mnemonics" = "请输入助记词";
+"language_create_mnemonics" = "请生成助记词";
+"language_add_success" = "添加成功";
+"language_import_success" = "导入成功";
+"language_send" = "转出";
+"language_send_success" = "转出成功";
+"language_input_address_and_amount" = "请输入转帐地址和数额";
+"language_password_is_wrong" = "密码不正确";
+"language_cancel" = "取消";
+"language_ok" = "确定";
+"language_album" = "相册权限";
+"language_album_desc" = "存储图片需要您开启相册权限";
+
+"language_wallet_name_duplicate" = "钱包名重复错误";
+"language_lock_wallet_success" = "锁币成功";
+
+
+
+
+
+

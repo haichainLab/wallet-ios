@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMMeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_blue_bg" translatesAutoresizingMaskIntoConstraints="NO" id="EPT-Xt-Cwv" userLabel="BG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xb_me_wallet" translatesAutoresizingMaskIntoConstraints="NO" id="6oB-ZS-1uD" userLabel="WalletIcon">
+                    <rect key="frame" x="157.5" y="30" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="JK2-NM-Ff1"/>
+                        <constraint firstAttribute="height" constant="60" id="vIT-L9-7Jc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="管理钱包 &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LY-YL-bHD" userLabel="Title">
+                    <rect key="frame" x="15" y="110" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmj-8x-DRH" userLabel="Btn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+                    <connections>
+                        <action selector="headerBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="BXy-UB-oMA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EPT-Xt-Cwv" secondAttribute="trailing" id="9jd-LU-OTU"/>
+                <constraint firstItem="1LY-YL-bHD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Br4-6J-OC3"/>
+                <constraint firstItem="6oB-ZS-1uD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YHG-jB-2oh"/>
+                <constraint firstAttribute="bottom" secondItem="EPT-Xt-Cwv" secondAttribute="bottom" id="YlV-Me-aCY"/>
+                <constraint firstAttribute="bottom" secondItem="wmj-8x-DRH" secondAttribute="bottom" id="Z0M-vF-ugm"/>
+                <constraint firstItem="1LY-YL-bHD" firstAttribute="top" secondItem="6oB-ZS-1uD" secondAttribute="bottom" constant="20" id="d5g-ow-x8b"/>
+                <constraint firstAttribute="trailing" secondItem="1LY-YL-bHD" secondAttribute="trailing" constant="15" id="dW1-dC-71E"/>
+                <constraint firstItem="6oB-ZS-1uD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="iUW-0o-p7l"/>
+                <constraint firstItem="wmj-8x-DRH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nwj-0d-ynO"/>
+                <constraint firstAttribute="trailing" secondItem="wmj-8x-DRH" secondAttribute="trailing" id="oWZ-B5-e0y"/>
+                <constraint firstItem="EPT-Xt-Cwv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pnw-cG-U6p"/>
+                <constraint firstItem="wmj-8x-DRH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wd5-yU-Iud"/>
+                <constraint firstItem="EPT-Xt-Cwv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y4o-Gr-tif"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="1LY-YL-bHD" id="ze5-xe-mRf"/>
+                <outlet property="walletIconImageView" destination="6oB-ZS-1uD" id="b1r-mG-Vvf"/>
+                <outlet property="walletIconTop" destination="iUW-0o-p7l" id="VeC-B9-Kyz"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="-530.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sam_blue_bg" width="375" height="264"/>
+        <image name="xb_me_wallet" width="84" height="84"/>
+    </resources>
+</document>

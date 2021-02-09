@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMCoinDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-yu-IIP" userLabel="BlueBG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_blue_bg" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-Lk-rYY" userLabel="BG">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RcL-gw-PSi" userLabel="CoinIcon">
+                            <rect key="frame" x="25" y="25" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="RcL-gw-PSi" secondAttribute="height" multiplier="1:1" id="fRU-CE-LTg"/>
+                                <constraint firstAttribute="width" constant="70" id="tAK-Ot-LkM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-ci-Nb1" userLabel="Balance">
+                            <rect key="frame" x="110" y="33" width="59" height="27"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-CJ-GGo" userLabel="CoinName">
+                            <rect key="frame" x="174" y="34.5" width="59" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1g-F8-nyj" userLabel="CoinHour">
+                            <rect key="frame" x="110" y="60" width="52" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RcL-gw-PSi" firstAttribute="centerY" secondItem="6U4-yu-IIP" secondAttribute="centerY" id="0dA-5t-fiz"/>
+                        <constraint firstItem="P1g-F8-nyj" firstAttribute="top" secondItem="qE6-ci-Nb1" secondAttribute="bottom" id="102-H1-i4Y"/>
+                        <constraint firstItem="P1g-F8-nyj" firstAttribute="leading" secondItem="qE6-ci-Nb1" secondAttribute="leading" id="3Jr-GX-yVB"/>
+                        <constraint firstItem="qE6-ci-Nb1" firstAttribute="bottom" secondItem="RcL-gw-PSi" secondAttribute="centerY" id="8u2-pF-WpX"/>
+                        <constraint firstItem="qE6-ci-Nb1" firstAttribute="leading" secondItem="RcL-gw-PSi" secondAttribute="trailing" constant="15" id="BkS-4p-MRO"/>
+                        <constraint firstItem="RcL-gw-PSi" firstAttribute="leading" secondItem="6U4-yu-IIP" secondAttribute="leading" constant="25" id="Xvf-Ew-Rlx"/>
+                        <constraint firstItem="6zs-Lk-rYY" firstAttribute="leading" secondItem="6U4-yu-IIP" secondAttribute="leading" id="awN-uE-s3j"/>
+                        <constraint firstItem="qOg-CJ-GGo" firstAttribute="leading" secondItem="qE6-ci-Nb1" secondAttribute="trailing" constant="5" id="edY-79-6G4"/>
+                        <constraint firstAttribute="bottom" secondItem="6zs-Lk-rYY" secondAttribute="bottom" id="gdM-Ki-Vlu"/>
+                        <constraint firstItem="6zs-Lk-rYY" firstAttribute="top" secondItem="6U4-yu-IIP" secondAttribute="top" id="iLH-jT-MLw"/>
+                        <constraint firstAttribute="trailing" secondItem="6zs-Lk-rYY" secondAttribute="trailing" id="j9l-5T-48h"/>
+                        <constraint firstItem="qOg-CJ-GGo" firstAttribute="centerY" secondItem="qE6-ci-Nb1" secondAttribute="centerY" id="lzV-eo-6AA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lf6-uR-lFU" userLabel="RecordBG">
+                    <rect key="frame" x="0.0" y="120" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近的交易记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvp-cr-bVc" userLabel="Title">
+                            <rect key="frame" x="15" y="0.0" width="360" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYu-eg-V52">
+                            <rect key="frame" x="0.0" y="39.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="loz-Fc-rKW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vvp-cr-bVc" secondAttribute="trailing" id="DzL-4O-2hW"/>
+                        <constraint firstAttribute="height" constant="40" id="SIl-13-IGk"/>
+                        <constraint firstAttribute="bottom" secondItem="vvp-cr-bVc" secondAttribute="bottom" id="bEs-iJ-lc1"/>
+                        <constraint firstItem="vvp-cr-bVc" firstAttribute="top" secondItem="Lf6-uR-lFU" secondAttribute="top" id="cCJ-U9-5uR"/>
+                        <constraint firstAttribute="trailing" secondItem="EYu-eg-V52" secondAttribute="trailing" id="lOU-nW-SJY"/>
+                        <constraint firstItem="vvp-cr-bVc" firstAttribute="leading" secondItem="Lf6-uR-lFU" secondAttribute="leading" constant="15" id="qm9-ij-Y4m"/>
+                        <constraint firstAttribute="bottom" secondItem="EYu-eg-V52" secondAttribute="bottom" id="trl-Bx-t1L"/>
+                        <constraint firstItem="EYu-eg-V52" firstAttribute="leading" secondItem="Lf6-uR-lFU" secondAttribute="leading" id="zsa-hb-cNz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lf6-uR-lFU" secondAttribute="trailing" id="5VP-4d-1aQ"/>
+                <constraint firstItem="Lf6-uR-lFU" firstAttribute="top" secondItem="6U4-yu-IIP" secondAttribute="bottom" id="6Rc-Lx-Igc"/>
+                <constraint firstItem="6U4-yu-IIP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8tA-u1-4je"/>
+                <constraint firstAttribute="bottom" secondItem="Lf6-uR-lFU" secondAttribute="bottom" id="d82-jn-x1z"/>
+                <constraint firstAttribute="trailing" secondItem="6U4-yu-IIP" secondAttribute="trailing" id="mxf-6J-PHY"/>
+                <constraint firstItem="6U4-yu-IIP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oSQ-a5-tGy"/>
+                <constraint firstItem="Lf6-uR-lFU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oiK-Y9-487"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coinBalanceLabel" destination="qE6-ci-Nb1" id="Kzz-KT-pGn"/>
+                <outlet property="coinHourLabel" destination="P1g-F8-nyj" id="Ry9-GI-YQ2"/>
+                <outlet property="coinIconImageView" destination="RcL-gw-PSi" id="hpZ-Ku-avi"/>
+                <outlet property="coinNameLabel" destination="qOg-CJ-GGo" id="V40-op-TGQ"/>
+                <outlet property="recordTitleLabel" destination="vvp-cr-bVc" id="eQX-hf-WyM"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-121.4392803598201"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sam_blue_bg" width="375" height="264"/>
+    </resources>
+</document>

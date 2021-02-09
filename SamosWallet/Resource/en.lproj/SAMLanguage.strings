@@ -1,0 +1,117 @@
+/* 
+  SAMLanguage.strings
+  SamosWallet
+
+  Created by zys on 2018/8/19.
+  Copyright © 2018年 zys. All rights reserved.
+*/
+
+/// 首页
+"language_total_assets" = "TotalAssets";
+"language_add" = "Add";
+"language_scan_qrcode" = "QR code";
+"language_create_wallet" = "Create A Wallet";
+"language_manage_wallet" = "Manage Wallets";
+"language_welcome_use_wallet" = "Welcome to use GALT wallet, please create a wallet if you are using it for the first time. If you have a wallet, then you can import it by mnemonics.";
+"language_welcome_to_hai" = "Welcome to Haichain world!";
+
+/// 个人中心
+"language_my_wallet" = "My Wallet";
+"language_system_setting" = "System Setting";
+"language_pricing_unit" = "Currency Unit";
+"language_select_language" = "Language";
+"language_english" = "English";
+"language_chinese" = "Chinese";
+"language_about_us" = "About Us";
+"language_about_us_desc" = "Galt Wallet is a safe digital wallet for blockchain asset.";
+"language_check_update" = "Check for Updates";
+
+/// 币种详情页、交易
+"language_trade_record" = "Transaction Record";
+"language_trade_sender" = "Sender:";
+"language_trade_receiver" = "Receiver:";
+"language_recent_trade_record" = "Recent Transaction Records";
+"language_trade_in_big" = "RECEIVE";
+"language_trade_out_big" = "SEND";
+"language_trade_in_small" = "Receive";
+"language_trade_out_small" = "Send";
+"language_trade_in_num" = "Payment Amount";
+"language_copy_address" = "COPY THE URL";
+"language_save_to_ablum" = "SAVE TO ALBUM";
+"language_share" = "Share";
+"language_trade_out_address" = "Enter Recipient Address";
+"language_input_or_press_to_paste_address" = "Enter or paste the address";
+"language_input_trade_out_num" = "Enter the amount";
+"language_next_big" = "NEXT";
+"language_next_small" = "Next";
+"language_trade_out_detail" = "Payment Detail";
+"language_trade_type" = "Transaction type:";
+"language_trade_in_address" = "Recipient:";
+"language_trade_num" = "Amount:";
+"language_trade_time" = "Timestamp:";
+"language_confirm_big" = "CONFIRM";
+"language_confirm_small" = "Connfirm";
+"language_wallet_pwd" = "Wallet Password";
+"language_pwd" = "Password";
+"language_input_pwd" = "Please enter your password";
+"language_input_pwd_again" = "Please enter your password again";
+"language_pwd_prompt" = "Password Prompt(Optional)";
+"language_input_pwd_prompt" = "Please ennter password prompt";
+"language_pwd_func" = "Please enter a password，the password is used for transaction, delete and other sensitive operations";
+"language_pwd_prompt_info" = "We won't save your password, password cannot be retrievedit if it lost. To prevent forgetting，you can enter a password prompt";
+"language_pwd_is_different" = "The password doesn't match!";
+
+/// 钱包相关
+"language_create_new_wallet" = "CREATE A WALLET";
+"language_import_a_wallet" = "IMPORT THE WALLET";
+"language_new_wallet" = "New Wallet";
+"language_wallet_name" = "Name your wallet";
+"language_input_wallet_name" = "Please input a wallet name";
+"language_wallet_name_exist" = "Wallet name is exist";
+"language_wallet_avatar" = "Wallet's Avatar";
+"language_select_wallet_avatar" = "Please select an image as the wallet icon";
+"language_new_wallet_next" = "Next";
+"language_to_secure_asset" = "To secure your assets:";
+"language_not_copy_seed" = "It is not recommented to take screenshorts or photos of your mnemonics as it might result in loss of your assets.";
+"language_got_it" = "Got It";
+"language_backup_seed_small" = "Back-up Mnemonics";
+"language_backup_seed_big" = "BACK-UP MNEMONICS";
+"language_write_seed" = "Write down your wallet mnemonics";
+"language_write_seed_guide" = "The mnemonics is for restoring your wallet.It is recommended to write down your mnemonics and store it somewhere safe.";
+"language_gen_new_seed" = "CREATE MNEMONICS";
+"language_verify_seed_confirm" = "Confirm";
+"language_rewrite_seed_tip" = "Make sure you remember your mnemonics";
+"language_input_seed" = "Please inout your mnemonics";
+"language_import" = "Import";
+"language_load_wallet" = "Load Wallet";
+"language_remove_wallet" = "DELETE THIS WALLET";
+"language_warning" = "Warning";
+"language_remove_wallet_alert" = "Please be careful, Your wallet can only be recovered by its corresponding mnemonics.";
+"language_remove_wallet_success" = "Delete Success";
+"language_copy_success" = "Copy Success";
+"language_wallet_create_success" = "Wallet Create Success";
+"language_new_asset" = "Add New Assets";
+"language_system_settings" = "System Settings";
+"language_save" = "Save";
+"language_save_success" = "Save Success";
+"language_wallet" = "Wallet";
+"language_exists" = "Already Exists";
+"language_input_mnemonics" = "Please input mnemonics";
+"language_create_mnemonics" = "Please create mnemonics";
+"language_add_success" = "Added";
+"language_import_success" = "Imported";
+"language_send" = "Send";
+"language_input_address_and_amount" = "Please input address and amount";
+"language_send_success" = "Send success";
+"language_password_is_wrong" = "Password is wrong";
+"language_cancel" = "Cancel";
+"language_ok" = "Ok";
+"language_album" = "Album permission";
+"language_album_desc" = "Album permission needed for photo";
+
+"language_wallet_name_duplicate" = "Duplicate wallet name error";
+"language_lock_wallet_success" = "Lock coin success";
+
+
+
+

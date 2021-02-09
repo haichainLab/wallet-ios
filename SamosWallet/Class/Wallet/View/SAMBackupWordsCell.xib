@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SAMBackupWordsCell" rowHeight="436" id="KGk-i7-Jjw" customClass="SAMBackupWordsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="435.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请抄写下您的助记词" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zah-h2-Rzm" userLabel="Title">
+                        <rect key="frame" x="86.5" y="51" width="147" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="助记词用于恢复钱包，请将它准确地抄写在纸上，并存放在只有你知道的安全的地方，如果遗失助记词你的钱包将无法恢复。位了钱包的安全请不要将助记词存储在网络上。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-6e-exz" userLabel="Desc">
+                        <rect key="frame" x="20" y="101" width="280" height="57.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2y-BJ-4zf" userLabel="Border">
+                        <rect key="frame" x="20" y="188.5" width="280" height="119.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="idle increase" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cz-P4-OEu" userLabel="Word">
+                                <rect key="frame" x="20" y="50" width="240" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-dE-Z0C" userLabel="CopyBtn">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="119.5"/>
+                                <connections>
+                                    <action selector="copyBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EP3-mJ-QMs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fSe-dE-Z0C" firstAttribute="leading" secondItem="P2y-BJ-4zf" secondAttribute="leading" id="2Wr-hw-8e8"/>
+                            <constraint firstItem="fSe-dE-Z0C" firstAttribute="top" secondItem="P2y-BJ-4zf" secondAttribute="top" id="6ae-kS-Hre"/>
+                            <constraint firstAttribute="bottom" secondItem="fSe-dE-Z0C" secondAttribute="bottom" id="Geo-lf-jMI"/>
+                            <constraint firstAttribute="trailing" secondItem="2Cz-P4-OEu" secondAttribute="trailing" constant="20" id="IF7-i7-ILf"/>
+                            <constraint firstAttribute="trailing" secondItem="fSe-dE-Z0C" secondAttribute="trailing" id="Mkq-By-Mtj"/>
+                            <constraint firstItem="2Cz-P4-OEu" firstAttribute="top" secondItem="P2y-BJ-4zf" secondAttribute="top" constant="50" id="R03-zP-KRb"/>
+                            <constraint firstItem="2Cz-P4-OEu" firstAttribute="leading" secondItem="P2y-BJ-4zf" secondAttribute="leading" constant="20" id="SNH-21-Yia"/>
+                            <constraint firstAttribute="bottom" secondItem="2Cz-P4-OEu" secondAttribute="bottom" constant="50" id="evm-g7-ND7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重新生成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJb-SD-NlL" userLabel="BtnTitle">
+                        <rect key="frame" x="227" y="333" width="58" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="piC-BT-TX6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.094117647060000004" green="0.20000000000000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCH-gh-1k9" userLabel="RecreateBtn">
+                        <rect key="frame" x="212" y="333" width="88" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.094117647060000004" green="0.20000000000000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="recreateBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uUi-2T-jg2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="NCH-gh-1k9" firstAttribute="trailing" secondItem="TJb-SD-NlL" secondAttribute="trailing" constant="15" id="0BO-pJ-T1O"/>
+                    <constraint firstAttribute="trailing" secondItem="P2y-BJ-4zf" secondAttribute="trailing" constant="20" id="3KO-pf-Kkm"/>
+                    <constraint firstAttribute="trailing" secondItem="Hsg-6e-exz" secondAttribute="trailing" constant="20" id="5Ve-Im-l3l"/>
+                    <constraint firstItem="P2y-BJ-4zf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="YRH-oE-aQB"/>
+                    <constraint firstItem="TJb-SD-NlL" firstAttribute="top" secondItem="P2y-BJ-4zf" secondAttribute="bottom" constant="25" id="YVr-ne-xMf"/>
+                    <constraint firstItem="NCH-gh-1k9" firstAttribute="bottom" secondItem="TJb-SD-NlL" secondAttribute="bottom" id="ajv-c6-9Av"/>
+                    <constraint firstItem="Hsg-6e-exz" firstAttribute="top" secondItem="zah-h2-Rzm" secondAttribute="bottom" constant="30" id="cfh-Ur-zba"/>
+                    <constraint firstItem="zah-h2-Rzm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dDx-7e-3fs"/>
+                    <constraint firstItem="Hsg-6e-exz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="egu-Yy-otp"/>
+                    <constraint firstItem="zah-h2-Rzm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="40" id="iF4-6V-OKo"/>
+                    <constraint firstItem="NCH-gh-1k9" firstAttribute="leading" secondItem="TJb-SD-NlL" secondAttribute="leading" constant="-15" id="ktg-08-Qy4"/>
+                    <constraint firstItem="TJb-SD-NlL" firstAttribute="trailing" secondItem="P2y-BJ-4zf" secondAttribute="trailing" constant="-15" id="oGs-Ab-1jf"/>
+                    <constraint firstItem="P2y-BJ-4zf" firstAttribute="top" secondItem="Hsg-6e-exz" secondAttribute="bottom" constant="30" id="p4T-Wl-RBT"/>
+                    <constraint firstItem="NCH-gh-1k9" firstAttribute="top" secondItem="TJb-SD-NlL" secondAttribute="top" id="shY-kW-PhQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="borderView" destination="P2y-BJ-4zf" id="HAw-vT-rWI"/>
+                <outlet property="btnTitleLabel" destination="TJb-SD-NlL" id="27L-fJ-ehe"/>
+                <outlet property="descLabel" destination="Hsg-6e-exz" id="Ofo-Si-pAp"/>
+                <outlet property="recreateBtn" destination="NCH-gh-1k9" id="0G6-R3-mV3"/>
+                <outlet property="titleLabel" destination="zah-h2-Rzm" id="hnp-qJ-pgx"/>
+                <outlet property="wordLabel" destination="2Cz-P4-OEu" id="q4g-uc-rFu"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>

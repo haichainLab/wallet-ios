@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SAMReceiveCell" rowHeight="521" id="KGk-i7-Jjw" customClass="SAMReceiveCell">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="521"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="520.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_qrcode_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-xQ-SFa" userLabel="BG">
+                        <rect key="frame" x="0.0" y="30" width="386" height="490.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2F7T.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bb2-X7-qrH" userLabel="Address">
+                        <rect key="frame" x="30" y="60" width="326" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="转入数目" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zkt-rf-DPO" userLabel="Num">
+                        <rect key="frame" x="93" y="161.5" width="200" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="HuU-dh-tPl"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                        <connections>
+                            <action selector="numChanged:" destination="KGk-i7-Jjw" eventType="editingChanged" id="isv-3t-eux"/>
+                            <action selector="numChanged:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="qz7-x7-45w"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="5u1-lZ-Mvt"/>
+                        </connections>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocL-xD-wZ0" userLabel="QRCode">
+                        <rect key="frame" x="113" y="288.5" width="160" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="Hyo-TY-pSM"/>
+                            <constraint firstAttribute="width" secondItem="ocL-xD-wZ0" secondAttribute="height" multiplier="1:1" id="RZd-v6-7PW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ocL-xD-wZ0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="88b-Rf-aAM"/>
+                    <constraint firstItem="fMb-xQ-SFa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="EkN-e4-eMH"/>
+                    <constraint firstItem="Bb2-X7-qrH" firstAttribute="trailing" secondItem="fMb-xQ-SFa" secondAttribute="trailing" constant="-30" id="IKq-qX-R7i"/>
+                    <constraint firstItem="Bb2-X7-qrH" firstAttribute="leading" secondItem="fMb-xQ-SFa" secondAttribute="leading" constant="30" id="Rrd-8V-vl6"/>
+                    <constraint firstAttribute="bottom" secondItem="fMb-xQ-SFa" secondAttribute="bottom" id="TlG-id-4ID"/>
+                    <constraint firstItem="Zkt-rf-DPO" firstAttribute="top" secondItem="Bb2-X7-qrH" secondAttribute="bottom" constant="80" id="XNy-Oc-Hnn"/>
+                    <constraint firstItem="ocL-xD-wZ0" firstAttribute="top" secondItem="Zkt-rf-DPO" secondAttribute="bottom" constant="100" id="XP8-bq-nqy"/>
+                    <constraint firstItem="fMb-xQ-SFa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="as8-bv-wng"/>
+                    <constraint firstItem="Zkt-rf-DPO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lLk-WQ-RVA"/>
+                    <constraint firstAttribute="trailing" secondItem="fMb-xQ-SFa" secondAttribute="trailing" id="obW-rs-9yN"/>
+                    <constraint firstItem="Bb2-X7-qrH" firstAttribute="top" secondItem="fMb-xQ-SFa" secondAttribute="top" constant="30" id="tgg-8n-HCA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addressLabel" destination="Bb2-X7-qrH" id="Beh-af-xWx"/>
+                <outlet property="numTextField" destination="Zkt-rf-DPO" id="T7t-fC-SKJ"/>
+                <outlet property="qrcodeImageView" destination="ocL-xD-wZ0" id="N0y-sm-bif"/>
+            </connections>
+            <point key="canvasLocation" x="84.799999999999997" y="353.9730134932534"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sam_qrcode_bg" width="885" height="1133"/>
+    </resources>
+</document>

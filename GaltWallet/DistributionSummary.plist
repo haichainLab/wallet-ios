@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GaltWallet.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>AFBCFFD0069EC3C67DEE4BAE524C2DF40095A2E0</string>
+				<key>dateExpires</key>
+				<string>2019/8/1</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>QPF299Z3Y5.io.samos.galt</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>QPF299Z3Y5</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>QPF299Z3Y5.io.samos.galt</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>SamosWallet.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>13a72b4e-47c5-486b-9e23-df417b827730</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: io.samos.galt</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>QPF299Z3Y5</string>
+				<key>name</key>
+				<string>Youhong Han</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

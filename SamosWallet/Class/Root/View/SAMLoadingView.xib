@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMLoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_launch_galt_750" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-uY-SNq" userLabel="BG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haichain Labs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5J-lN-QeD" userLabel="Msg">
+                    <rect key="frame" x="20" y="451" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adm-6t-Uhk" userLabel="Second">
+                    <rect key="frame" x="175" y="540" width="25" height="27"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎进入Haichain的世界！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJI-FY-kGa" userLabel="Loading">
+                    <rect key="frame" x="55.5" y="498" width="264.5" height="27"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GJI-FY-kGa" firstAttribute="top" secondItem="V5J-lN-QeD" secondAttribute="bottom" constant="30" id="3tX-XN-0De"/>
+                <constraint firstAttribute="trailing" secondItem="rHz-uY-SNq" secondAttribute="trailing" id="5lf-af-AIp"/>
+                <constraint firstAttribute="trailing" secondItem="V5J-lN-QeD" secondAttribute="trailing" constant="20" id="PqV-vG-Uzl"/>
+                <constraint firstAttribute="bottom" secondItem="adm-6t-Uhk" secondAttribute="bottom" constant="100" id="S4g-us-mls"/>
+                <constraint firstItem="V5J-lN-QeD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="YKd-XA-UXq"/>
+                <constraint firstItem="adm-6t-Uhk" firstAttribute="top" secondItem="GJI-FY-kGa" secondAttribute="bottom" constant="15" id="azH-Ut-e4d"/>
+                <constraint firstItem="adm-6t-Uhk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="che-Km-7so"/>
+                <constraint firstItem="GJI-FY-kGa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="de4-Cf-htM"/>
+                <constraint firstAttribute="bottom" secondItem="rHz-uY-SNq" secondAttribute="bottom" id="on0-6Y-MLM"/>
+                <constraint firstItem="rHz-uY-SNq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sqy-WM-gmH"/>
+                <constraint firstItem="rHz-uY-SNq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z2n-TP-WhC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="secondsLabel" destination="adm-6t-Uhk" id="GPs-RV-KC0"/>
+                <outlet property="welcomeLabel" destination="GJI-FY-kGa" id="z3m-Ua-Fxj"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="sam_launch_galt_750" width="750" height="1334"/>
+    </resources>
+</document>

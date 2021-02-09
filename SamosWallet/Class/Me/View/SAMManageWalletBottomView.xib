@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMManageWalletBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzQ-CQ-ubC" userLabel="CreateBtn">
+                    <rect key="frame" x="20" y="15" width="335" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cKo-vg-MGo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="创建钱包">
+                        <color key="titleColor" red="0.094117647060000004" green="0.20000000000000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksTobounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="I9h-iW-jyE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-By-eFL" userLabel="ImportBtn">
+                    <rect key="frame" x="20" y="85" width="335" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jQn-aH-YkP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="导入钱包">
+                        <color key="titleColor" red="0.094117647060000004" green="0.20000000000000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksTobounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="importBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="uBl-kQ-kBK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bQO-By-eFL" firstAttribute="trailing" secondItem="EzQ-CQ-ubC" secondAttribute="trailing" id="7DX-0M-y2O"/>
+                <constraint firstItem="bQO-By-eFL" firstAttribute="top" secondItem="EzQ-CQ-ubC" secondAttribute="bottom" constant="20" id="EQg-Q9-sJt"/>
+                <constraint firstItem="EzQ-CQ-ubC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="V7U-RK-l2O"/>
+                <constraint firstAttribute="trailing" secondItem="EzQ-CQ-ubC" secondAttribute="trailing" constant="20" id="VAj-b1-e6E"/>
+                <constraint firstItem="EzQ-CQ-ubC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="iuQ-bs-RkD"/>
+                <constraint firstItem="bQO-By-eFL" firstAttribute="leading" secondItem="EzQ-CQ-ubC" secondAttribute="leading" id="via-rT-GyD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="createBtn" destination="EzQ-CQ-ubC" id="Z3a-wr-1zF"/>
+                <outlet property="importBtn" destination="bQO-By-eFL" id="CZo-ab-aYi"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-188"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  SamosWallet
+//
+//  Created by zys on 2018/8/19.
+//  Copyright © 2018年 zys. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - Third Part Lib
+#import <YYModel.h>
+#import <SVProgressHUD.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import <MGJRouter.h>
+#import <Mobile/Mobile.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+
+#pragma mark - Project
+#import "SAMConst.h"
+#import "SAMDeviceInfo.h"
+#import "SAMNavigationController.h"
+#import "UIColor+SAMAddition.h"
+#import "NSString+SAMAddtion.h"
+#import "SAMControllerTool.h"
+#import "SAMWalletDB.h"
+#import "SAMPathManager.h"
+#import "SAMWalletInfo.h"
+#import "SAMTokenInfo.h"
+#import "SAMCoinRateInfo.h"
+#import "SAMNotificationConst.h"
+#import "SAMWalletUtil.h"
+#import "SAMTokenUtil.h"
+#import "SAMWalletTokenInfo.h"
+#import "SAMTool.h"
+
+#import "HaiProtocolTool.h"
+#import "LockTokenInfo.h"
+
+#endif /* PrefixHeader_pch */

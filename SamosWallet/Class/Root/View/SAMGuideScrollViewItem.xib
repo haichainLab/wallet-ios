@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMGuideScrollViewItem">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wER-eS-J3K" userLabel="Cover">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzf-TZ-4bD" userLabel="StartBtn">
+                    <rect key="frame" x="275" y="383" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4k4-YH-9z5"/>
+                        <constraint firstAttribute="width" constant="100" id="IW6-52-IsV"/>
+                    </constraints>
+                    <connections>
+                        <action selector="startBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="TG4-Ug-M9S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Lzf-TZ-4bD" secondAttribute="bottom" id="1eF-jY-5cq"/>
+                <constraint firstItem="wER-eS-J3K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Eg-Pu-mNc"/>
+                <constraint firstItem="wER-eS-J3K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FPV-Xz-WwU"/>
+                <constraint firstAttribute="bottom" secondItem="wER-eS-J3K" secondAttribute="bottom" id="hvE-LT-FMI"/>
+                <constraint firstAttribute="trailing" secondItem="wER-eS-J3K" secondAttribute="trailing" id="iam-xN-2pR"/>
+                <constraint firstAttribute="trailing" secondItem="Lzf-TZ-4bD" secondAttribute="trailing" id="tf4-cz-m3P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coverImageView" destination="wER-eS-J3K" id="PG8-wa-ezM"/>
+                <outlet property="startBtn" destination="Lzf-TZ-4bD" id="Aot-vI-V7D"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-58.5"/>
+        </view>
+    </objects>
+</document>

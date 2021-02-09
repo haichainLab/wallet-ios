@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMTradeBottomBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-tV-eQb" userLabel="OutBtn">
+                    <rect key="frame" x="20" y="53" width="157.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gln-S2-Bku"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="转出">
+                        <color key="titleColor" red="0.094117647060000004" green="0.20000000000000001" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="outBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Uhe-gR-N1S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyq-XA-ofS" userLabel="InBtn">
+                    <rect key="frame" x="197.5" y="53" width="157.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="转入">
+                        <color key="titleColor" red="0.094117647060000004" green="0.20000000000000001" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="9AG-ju-1Gq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fyq-XA-ofS" firstAttribute="top" secondItem="cEB-tV-eQb" secondAttribute="top" id="TwS-JA-HjW"/>
+                <constraint firstItem="fyq-XA-ofS" firstAttribute="leading" secondItem="cEB-tV-eQb" secondAttribute="trailing" constant="20" id="e9d-y1-rso"/>
+                <constraint firstItem="fyq-XA-ofS" firstAttribute="width" secondItem="cEB-tV-eQb" secondAttribute="width" id="fH4-c2-UdF"/>
+                <constraint firstAttribute="bottom" secondItem="cEB-tV-eQb" secondAttribute="bottom" constant="20" id="hVw-wh-pvd"/>
+                <constraint firstItem="cEB-tV-eQb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="mqT-lI-Wp0"/>
+                <constraint firstAttribute="trailing" secondItem="fyq-XA-ofS" secondAttribute="trailing" constant="20" id="pCy-RQ-Zsw"/>
+                <constraint firstItem="fyq-XA-ofS" firstAttribute="bottom" secondItem="cEB-tV-eQb" secondAttribute="bottom" id="rIW-cb-rJ3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="inBtn" destination="fyq-XA-ofS" id="lM5-xe-hS4"/>
+                <outlet property="outBtn" destination="cEB-tV-eQb" id="bO2-P0-HW8"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="-172.26386806596702"/>
+        </view>
+    </objects>
+</document>

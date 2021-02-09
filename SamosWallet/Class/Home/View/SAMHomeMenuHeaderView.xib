@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMHomeMenuHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_home_menu_logo" translatesAutoresizingMaskIntoConstraints="NO" id="vKk-M6-FIM" userLabel="Logo">
+                    <rect key="frame" x="120" y="50" width="135" height="73"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uL4-cN-WJF" userLabel="BottomLine">
+                    <rect key="frame" x="10" y="166" width="355" height="1"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PE8-0k-C5Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vKk-M6-FIM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="BpN-a7-XZR"/>
+                <constraint firstItem="uL4-cN-WJF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Er6-CY-a1k"/>
+                <constraint firstAttribute="trailing" secondItem="uL4-cN-WJF" secondAttribute="trailing" constant="10" id="LKv-yM-DHS"/>
+                <constraint firstItem="vKk-M6-FIM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f2N-pQ-1ot"/>
+                <constraint firstAttribute="bottom" secondItem="uL4-cN-WJF" secondAttribute="bottom" id="fyA-Oj-i6P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="-144.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sam_home_menu_logo" width="135" height="73"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMAboutUsHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="237"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_blue_bg" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-EW-93O" userLabel="BG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="237"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam_about_us_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6oB-ZS-1uD" userLabel="Logo">
+                    <rect key="frame" x="104.5" y="30" width="166" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6oB-ZS-1uD" secondAttribute="height" multiplier="203:110" id="mgG-qK-4gy"/>
+                        <constraint firstAttribute="height" constant="90" id="sgk-iY-26S"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安全稳定、转账免费、多币种钱包" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LY-YL-bHD" userLabel="Title">
+                    <rect key="frame" x="15" y="150" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1LY-YL-bHD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Br4-6J-OC3"/>
+                <constraint firstAttribute="trailing" secondItem="MX2-EW-93O" secondAttribute="trailing" id="Vve-QU-5Xe"/>
+                <constraint firstItem="6oB-ZS-1uD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YHG-jB-2oh"/>
+                <constraint firstItem="1LY-YL-bHD" firstAttribute="top" secondItem="6oB-ZS-1uD" secondAttribute="bottom" constant="30" id="d5g-ow-x8b"/>
+                <constraint firstAttribute="trailing" secondItem="1LY-YL-bHD" secondAttribute="trailing" constant="15" id="dW1-dC-71E"/>
+                <constraint firstItem="MX2-EW-93O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dms-lT-BTc"/>
+                <constraint firstItem="6oB-ZS-1uD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="iUW-0o-p7l"/>
+                <constraint firstAttribute="bottom" secondItem="MX2-EW-93O" secondAttribute="bottom" id="lTC-Hv-73O"/>
+                <constraint firstItem="MX2-EW-93O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sbt-WA-RQC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logoTop" destination="iUW-0o-p7l" id="Nk1-zL-abD"/>
+                <outlet property="titleLabel" destination="1LY-YL-bHD" id="Q4W-A1-hP7"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="-514.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sam_about_us_logo" width="203" height="110"/>
+        <image name="sam_blue_bg" width="375" height="264"/>
+    </resources>
+</document>

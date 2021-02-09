@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SAMHomeWalletCoinCell" rowHeight="97" id="KGk-i7-Jjw" customClass="SAMHomeWalletCoinCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pG0-yF-FcR" userLabel="CoinIcon">
+                        <rect key="frame" x="20" y="15" width="65.5" height="65.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pG0-yF-FcR" secondAttribute="height" multiplier="1:1" id="8C0-mK-ZGP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-Ye-pXg" userLabel="CoinName">
+                        <rect key="frame" x="100.5" y="24.5" width="59" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 SAMO=$0.21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZN-6b-4Pb" userLabel="CoinRate">
+                        <rect key="frame" x="100.5" y="52.5" width="107.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1O-6Z-PCH" userLabel="CoinValue">
+                        <rect key="frame" x="303.5" y="25.5" width="44.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.89" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb3-UL-yfh" userLabel="RealValue">
+                        <rect key="frame" x="295.5" y="52.5" width="52.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJr-vy-wUN" userLabel="BottomLine">
+                        <rect key="frame" x="20" y="95.5" width="328" height="1"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="PcJ-iE-wIx"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c4-Fb-HsC">
+                        <rect key="frame" x="216" y="15" width="65" height="57"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="锁币"/>
+                        <connections>
+                            <action selector="onLockCoin:" destination="KGk-i7-Jjw" eventType="touchDown" id="g47-A8-vO7"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lJr-vy-wUN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3is-7I-Voa"/>
+                    <constraint firstItem="TZN-6b-4Pb" firstAttribute="top" secondItem="Tbe-Ye-pXg" secondAttribute="bottom" constant="4" id="Lgy-n5-FGq"/>
+                    <constraint firstItem="G1O-6Z-PCH" firstAttribute="centerY" secondItem="Tbe-Ye-pXg" secondAttribute="centerY" id="O51-tK-y1Q"/>
+                    <constraint firstItem="TZN-6b-4Pb" firstAttribute="leading" secondItem="Tbe-Ye-pXg" secondAttribute="leading" id="Ppq-qa-yoH"/>
+                    <constraint firstAttribute="bottom" secondItem="lJr-vy-wUN" secondAttribute="bottom" id="Qzw-SE-iOL"/>
+                    <constraint firstItem="pG0-yF-FcR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="YQc-6j-VXl"/>
+                    <constraint firstAttribute="trailing" secondItem="lJr-vy-wUN" secondAttribute="trailing" constant="20" id="ZsI-Lw-i4n"/>
+                    <constraint firstItem="lJr-vy-wUN" firstAttribute="top" secondItem="pG0-yF-FcR" secondAttribute="bottom" constant="15" id="gBa-5S-QHD"/>
+                    <constraint firstItem="Tbe-Ye-pXg" firstAttribute="leading" secondItem="pG0-yF-FcR" secondAttribute="trailing" constant="15" id="iAB-kr-qik"/>
+                    <constraint firstItem="Mb3-UL-yfh" firstAttribute="centerY" secondItem="TZN-6b-4Pb" secondAttribute="centerY" id="oMC-xH-Alt"/>
+                    <constraint firstItem="Tbe-Ye-pXg" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sTg-kY-Axk"/>
+                    <constraint firstItem="pG0-yF-FcR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="sr8-PV-oMv"/>
+                    <constraint firstItem="Mb3-UL-yfh" firstAttribute="trailing" secondItem="G1O-6Z-PCH" secondAttribute="trailing" id="ubV-iY-ad0"/>
+                    <constraint firstAttribute="trailing" secondItem="G1O-6Z-PCH" secondAttribute="trailing" constant="20" id="wFD-WU-yF6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coinIconImageView" destination="pG0-yF-FcR" id="kez-Je-4hE"/>
+                <outlet property="coinLockButton" destination="8c4-Fb-HsC" id="e5T-A9-GCd"/>
+                <outlet property="coinNameLabel" destination="Tbe-Ye-pXg" id="lss-Hg-xsF"/>
+                <outlet property="coinRateLabel" destination="TZN-6b-4Pb" id="m4Q-te-rCL"/>
+                <outlet property="coinValueLabel" destination="G1O-6Z-PCH" id="S5g-p7-7eS"/>
+                <outlet property="realValueLabel" destination="Mb3-UL-yfh" id="Nbb-Pe-MJg"/>
+            </connections>
+            <point key="canvasLocation" x="9.5999999999999996" y="131.78410794602701"/>
+        </tableViewCell>
+    </objects>
+</document>
